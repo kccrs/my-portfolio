@@ -16,14 +16,13 @@ header {
   height: 70px;
   background: #F26101;
   border-bottom: 2px solid #304269;
-
 }
 
 h1 {
   font-size: 50px;
   font-weight: 700;
-  /*text-shadow: 1px 1px #304269;*/
-  padding: 10px 0 0 10px;
+  color: #304269;
+  padding: 15px 0 0 20px;
   float: left;
 }
 
@@ -34,22 +33,21 @@ h1 a {
 
 header nav li {
   float: right;
-  /*display: inline-block;*/
   text-decoration: none;
   margin-top: 25px;
   padding-right: 25px;
 }
 
 nav a {
-    color: #304269;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.3em;
+  color: #304269;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.3em;
 }
 
-h1 a:visited,
-nav a:visited {
-  color: #D9E8F5;
+nav a:hover,
+h1 a:hover {
+  color: #91BED4;
 }
 
 /* Main Body Styles */
@@ -68,18 +66,56 @@ h3 {
   font-size: 20px;
 }
 
-img {
-  margin: 0 auto;
+.container {
+  width: 90%;
+  margin: 0 auto 25px;
+  display: inline-block;
 }
 
-.projects {
+p {
+  font-size: 20px;
+}
+
+.main-content,
+.secondary-content {
+  height: 600px;
   border: 1px solid #91BED4;
-  padding: 10px;
+}
+
+.main-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  margin-left: 60px;
+  padding: 20px 0 5px 50px;
+
+}
+.main-content p {
+  width: 90%;
+}
+
+.secondary-content {
+  vertical-align: top;
+  width: 30%;
+  float: right;
+  padding: 20px 10px 5px 10px;
+}
+
+/* Projects Page */
+
+.projects {
+  height: 600px;
+  border: 1px solid #91BED4;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0 10px 60px;
+  width: 90%;
+  padding: 20px 0 5px 50px;
 }
 
 .project-pics {
   display: block;
-  border-radius: 20px;
+  border-radius: 10px;
   max-width: 300px;
   max-height: 300px;
 }
@@ -95,7 +131,8 @@ section p {
 }
 
 .casey {
-  max-width: 200px;
+  max-width: 300px;
+  margin: auto;
 }
 
 /* Contact page Styles */
