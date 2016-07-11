@@ -9,6 +9,7 @@ html {
 html, body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: #D9E8F5;
+  height: 100%;
 }
 
 /* Header Styles*/
@@ -26,9 +27,10 @@ h1 {
   float: left;
 }
 
-h1 a {
+a {
   color: #304269;
   text-decoration: none;
+  font-weight: bold;
 }
 
 header nav li {
@@ -64,20 +66,30 @@ h2 {
 
 h3 {
   font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .container {
   width: 90%;
-  margin: 0 auto 25px;
+  margin: 20px auto;
   display: inline-block;
+  min-height: 100%;
+}
+
+.container:after {
+  content: "";
+  display: block;
 }
 
 p {
   font-size: 20px;
+  padding: 10px 0 10px 0;
+  line-height: 1.2;
 }
 
 .main-content,
 .secondary-content {
+  margin-top: 10px;
   height: 600px;
   border: 1px solid #91BED4;
 }
@@ -91,7 +103,8 @@ p {
 
 }
 .main-content p {
-  width: 90%;
+  width: 55%;
+  float: right;
 }
 
 .secondary-content {
@@ -101,7 +114,18 @@ p {
   padding: 20px 10px 5px 10px;
 }
 
+.casey {
+  max-height: 300px;
+  float: left;
+  margin-top: 10px;
+}
+
 /* Projects Page */
+
+.sticky-footer {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
 
 .projects {
   height: 600px;
@@ -113,26 +137,57 @@ p {
   padding: 20px 0 5px 50px;
 }
 
+.project-wrapper {
+  border: 1px solid #91BED4;
+  vertical-align: top;
+  margin: 20px 0 20px 60px;
+  width: 90%;
+  padding: 20px 20px 5px 50px;
+}
+
 .project-pics {
-  display: block;
   border-radius: 10px;
   max-width: 300px;
   max-height: 300px;
+  padding-bottom: 20px;
 }
 
-section {
-  margin: 10px;
-  padding-bottom: 5px;
+article {
+  width: 48%;
+  margin-right: 10px;
+  padding-left: 5px;
 }
 
-section p {
-  margin-bottom: 10px;
-  margin-top: 10px;
+.description {
+  display: inline-block;
+  width: 80%;
+  vertical-align: top
+  padding: 20px 0 5px 50px;
 }
 
-.casey {
-  max-width: 300px;
-  margin: auto;
+.about-project {
+  display: inline-block;
+  /*width: 65%;*/
+}
+
+.description p {
+  width: 80%;
+}
+
+.additional-project-info {
+  display: inline-block;
+  /*width: 35%;*/
+  float: right;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.tools {
+  list-style: circle inside;
+}
+
+.tools li {
+  margin-bottom: 5px;
 }
 
 /* Contact page Styles */
