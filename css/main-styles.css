@@ -65,8 +65,13 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 22px;
   padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .container {
@@ -182,7 +187,8 @@ article {
   padding-right: 10px;
 }
 
-.tools {
+.tools,
+.column-three li {
   list-style: circle inside;
 }
 
@@ -190,7 +196,51 @@ article {
   margin-bottom: 5px;
 }
 
+/* History Page */
+
+.column-one,
+.column-two,
+.column-three {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column-one {
+  width: 35%;
+  margin-left: 40px;
+}
+
+.column-two,
+.column-three {
+  width: 25%;
+  border-left: 2px solid #F26101;
+  padding-left: 20px;
+  line-height: 1.2;
+  margin-left: 20px;
+}
+
 /* Contact page Styles */
+
+.contact-container {
+  border: 1px solid #91BED4;
+  width: 800px;
+  min-height: 100%;
+  margin: 20px auto;
+}
+
+.contact-page {
+  margin: auto;
+  padding-top: 20px;
+}
+
+.contact-page p {
+  display: block;
+  clear: left;
+}
+
+.contact li {
+  padding-bottom: 10px;
+}
 
 .contact a {
   text-decoration: none;
