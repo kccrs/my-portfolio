@@ -17,6 +17,9 @@ header {
   height: 70px;
   background: #F26101;
   border-bottom: 2px solid #304269;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 h1 {
@@ -70,14 +73,19 @@ h4 {
   font-size: 17px;
 }
 
-.container {
-  width: 90%;
+.wrapper {
   margin: 20px auto;
   display: inline-block;
   min-height: 100%;
+  position: absolute;
+  overflow-y: scroll;
+  top: 50px;
+  left:0px;
+  right:0px;
+  bottom:0px;
 }
 
-.container:after {
+.wrapper:after {
   content: "";
   display: block;
 }
@@ -128,11 +136,6 @@ p {
 }
 
 /* Projects Page */
-
-.sticky-footer {
-  min-height: 100%;
-  margin-bottom: -100px;
-}
 
 .projects,
 .project-wrapper {
