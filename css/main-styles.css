@@ -17,6 +17,9 @@ header {
   height: 70px;
   background: #F26101;
   border-bottom: 2px solid #304269;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 h1 {
@@ -71,7 +74,6 @@ h4 {
 }
 
 .wrapper {
-  width: 90%;
   margin: 20px auto;
   display: inline-block;
   min-height: 100%;
