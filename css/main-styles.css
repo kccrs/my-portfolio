@@ -68,13 +68,36 @@ h1 a:hover {
   top: 80px;
 }
 
+h2 {
+  font-size: 32px;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
 .casey {
+  height: 350px;
   max-width: 300px;
 }
 
 section {
-  margin: 20px;
+  margin: 100px 20px 0px 20px;
+  display: flex;
+  background-color: yellow;
 }
+
+.my-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-projects h3 {
+  margin-top: 10px;
+}
+
+
 /* Footer Styles */
 
 footer {
