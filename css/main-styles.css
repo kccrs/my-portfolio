@@ -75,7 +75,7 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -83,6 +83,7 @@ h3 {
   height: 350px;
   max-width: 300px;
   margin-left: 200px;
+  margin-top: 30px;
 }
 
 section {
@@ -112,8 +113,10 @@ section {
 .about-project,
 .additional-project-info {
   max-width: 50%;
-  height: 400px;
+  height: 500px;
   padding: 20px;
+  border-bottom: 2px solid #304269;
+  /*padding-bottom: 20px;*/
 }
 
 .about-project {
@@ -123,18 +126,37 @@ section {
 .additional-project-info {
   float: right;
   clear: right;
-}
-
-.about-project,
-.additional-project-info {
-  border-bottom: 2px solid #304269;
-  padding-bottom: 20px;
+  padding-top: 30px;
 }
 
 .project-pics {
   margin-left: 50px;
   margin-top: 50px;
   max-width: 300px;
+}
+
+.my-history h2 {
+  margin-top: 50px;
+}
+
+aside {
+  margin-left: 40px;
+}
+
+.education,
+.work-experience {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #304269;
+}
+
+.contact-page h2 {
+  margin-top: 30px;
+}
+
+.contact-info {
+  list-style-type: none;
+  margin: 40px auto;
+  width: 200px;
 }
 
 /* FOOTER STYLES */
