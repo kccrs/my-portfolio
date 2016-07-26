@@ -59,34 +59,37 @@ h1 a:hover {
 }
 
 /* MAIN BODY STYLES */
-
 .wrapper {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 80px;
+  font-size: 24px;
   /*justify-content: center;*/
 }
 
 h2 {
-  font-size: 32px;
-  margin: 10px;
+  font-size: 40px;
+  margin: 10px 0 20px 0;
+  text-align: center;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .casey {
   height: 350px;
   max-width: 300px;
   margin-left: 200px;
+  margin-top: 30px;
 }
 
 section {
   width: 90%;
   margin: 0 auto;
-  display: flex;
+  /*display: flex;*/
 }
 
 .main-content {
@@ -98,31 +101,62 @@ section {
   margin: 0 auto;
 }
 
-h2 {
-  text-align: center;
-}
-
 .about-me {
   text-align: justify;
-  font-size: 20px;
   margin-bottom: 20px;
-}
-
-.face {
-
-}
-
-.my-projects {
-  display: flex;
-  flex-direction: column;
 }
 
 .my-projects h3 {
   margin-top: 10px;
 }
 
+.about-project,
+.additional-project-info {
+  max-width: 50%;
+  height: 500px;
+  padding: 20px;
+  border-bottom: 2px solid #304269;
+  /*padding-bottom: 20px;*/
+}
+
+.about-project {
+  float: left;
+}
+
+.additional-project-info {
+  float: right;
+  clear: right;
+  padding-top: 30px;
+}
+
 .project-pics {
-  max-width: 500px;
+  margin-left: 50px;
+  margin-top: 50px;
+  max-width: 300px;
+}
+
+.my-history h2 {
+  margin-top: 50px;
+}
+
+aside {
+  margin-left: 40px;
+}
+
+.education,
+.work-experience {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #304269;
+}
+
+.contact-page h2 {
+  margin-top: 30px;
+}
+
+.contact-info {
+  list-style-type: none;
+  margin: 40px auto;
+  width: 200px;
 }
 
 /* FOOTER STYLES */
