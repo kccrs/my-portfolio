@@ -59,22 +59,24 @@ h1 a:hover {
 }
 
 /* MAIN BODY STYLES */
-
 .wrapper {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 80px;
+  font-size: 24px;
   /*justify-content: center;*/
 }
 
 h2 {
-  font-size: 32px;
-  margin: 10px;
+  font-size: 40px;
+  margin: 10px 0 20px 0;
+  text-align: center;
 }
 
 h3 {
   font-size: 22px;
+  margin-bottom: 20px;
 }
 
 .casey {
@@ -86,7 +88,7 @@ h3 {
 section {
   width: 90%;
   margin: 0 auto;
-  display: flex;
+  /*display: flex;*/
 }
 
 .main-content {
@@ -98,31 +100,41 @@ section {
   margin: 0 auto;
 }
 
-h2 {
-  text-align: center;
-}
-
 .about-me {
   text-align: justify;
-  font-size: 20px;
   margin-bottom: 20px;
-}
-
-.face {
-
-}
-
-.my-projects {
-  display: flex;
-  flex-direction: column;
 }
 
 .my-projects h3 {
   margin-top: 10px;
 }
 
+.about-project,
+.additional-project-info {
+  max-width: 50%;
+  height: 400px;
+  padding: 20px;
+}
+
+.about-project {
+  float: left;
+}
+
+.additional-project-info {
+  float: right;
+  clear: right;
+}
+
+.about-project,
+.additional-project-info {
+  border-bottom: 2px solid #304269;
+  padding-bottom: 20px;
+}
+
 .project-pics {
-  max-width: 500px;
+  margin-left: 50px;
+  margin-top: 50px;
+  max-width: 300px;
 }
 
 /* FOOTER STYLES */
