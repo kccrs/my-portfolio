@@ -1,4 +1,4 @@
-/* Whole Page Styles */
+/* WHOLE PAGE STYLES */
 html {
   box-sizing: border-box;
 }
@@ -9,12 +9,12 @@ html {
 html, body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: #D9E8F5;
-  height: 100%;
 }
 
-/* Header Styles*/
+/* HEADER STYLES */
+
 header {
-  height: 70px;
+  height: 100px;
   background: #F26101;
   border-bottom: 2px solid #304269;
   position: fixed;
@@ -23,7 +23,7 @@ header {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   padding: 15px 0 0 20px;
   float: left;
 }
@@ -32,25 +32,25 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: bold;
   color: #304269;
+  font-weight: bold;
 }
 
 a {
   color: #304269;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 header nav li {
   float: right;
-  text-decoration: none;
-  margin-top: 25px;
+  margin-top: 35px;
   padding-right: 25px;
+  text-decoration: none;
 }
 
 nav a {
-  font-size: 1.3em;
+  font-size: 2em;
 }
 
 nav a:hover,
@@ -58,14 +58,14 @@ h1 a:hover {
   color: #91BED4;
 }
 
-/* Main Body Styles */
-
+/* MAIN BODY STYLES */
 
 .wrapper {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 80px;
+  /*justify-content: center;*/
 }
 
 h2 {
@@ -80,12 +80,36 @@ h3 {
 .casey {
   height: 350px;
   max-width: 300px;
+  margin-left: 200px;
 }
 
 section {
-  margin: 100px 20px 0px 20px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  background-color: yellow;
+}
+
+.main-content {
+  margin: 100px auto;
+}
+
+.centered {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.about-me {
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.face {
+
 }
 
 .my-projects {
@@ -97,16 +121,19 @@ section {
   margin-top: 10px;
 }
 
+.project-pics {
+  max-width: 500px;
+}
 
-/* Footer Styles */
+/* FOOTER STYLES */
 
 footer {
   background: #304269;
+  border-top: 2px solid #F26101;
+  color: #D9E8F5;
   height: 100px;
   margin-top: 10px;
   text-align: center;
-  color: #D9E8F5;
-  border-top: 2px solid #F26101;
 }
 
 footer p {
@@ -120,3 +147,7 @@ footer li {
 .social-media-logo {
   max-width: 25px;
 }
+
+/* MEDIA QUERIES */
+
+/*@media screen and (max-width: 650px)*/
