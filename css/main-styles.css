@@ -25,7 +25,7 @@ header {
 }
 
 h1 {
-  font-size: 3.3em;
+  font-size: 3.1em;
   padding: 25px 0 0 20px;
   float: left;
   text-align: center;
@@ -46,16 +46,16 @@ a {
   text-decoration: none;
 }
 
-header nav li {
+nav li {
   float: right;
   margin-top: 25px;
-  padding-right: 20px;
+  padding-right: 15px;
   text-decoration: none;
   text-align: center;
 }
 
 nav a {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 nav a:hover,
@@ -122,10 +122,9 @@ section, .centered {
 .about-project,
 .additional-project-info {
   max-width: 80%;
-  /*height: 500px;*/
   padding: 20px;
   margin: auto;
-  border: 2px solid black;
+  border: 2px solid #304269;
 }
 
 .about-project {
@@ -133,8 +132,6 @@ section, .centered {
 }
 
 .additional-project-info {
-  /*float: right;*/
-  /*clear: right;*/
   border-top: 0;
   padding-top: 30px;
 }
@@ -203,4 +200,41 @@ footer li {
 
 /* MEDIA QUERIES */
 
-/*@media screen and (max-width: 650px)*/
+@media screen and (min-width: 650px){
+
+  h1 {
+    font-size: 4em;
+  }
+
+  nav li {
+    font-size: 1.7em;
+    padding-right: 30px;
+    margin-top: 20px;
+  }
+
+  .about-project,
+  .additional-project-info {
+    max-width: 40%;
+    height: 500px;
+    border: none;
+  }
+
+  .about-project {
+    float: left;
+  }
+
+  .additional-project-info {
+    padding-top: 90px;
+    float:right;
+  }
+
+  .education,
+  .my-projects {
+    border-top: 2px solid #304269
+  }
+
+  .face {
+    margin-bottom: 50px;
+  }
+
+}
