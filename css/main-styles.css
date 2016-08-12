@@ -236,8 +236,8 @@ footer li {
   }
 
   nav {
-    max-width: 50%;
     float: right;
+    max-width: 50%;
   }
 
   nav li {
