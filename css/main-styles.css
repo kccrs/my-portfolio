@@ -7,31 +7,24 @@ html {
 }
 
 html, body {
-  font-family: 'Josefin Sans', sans-serif;
   background-color: #D9E8F5;
 }
 
-/* HEADER STYLES */
+p {
+  line-height: 1.3em;
+}
 
-header {
-  height: 100px;
-  background: #F26101;
-  border-bottom: 2px solid #304269;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-  /*display: flex;*/
-  /*flex-direction: column;*/
+/* TYPOGRAPHY */
+
+html, body {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
-  font-size: 3.1em;
-  padding: 25px 0 0 20px;
-  float: left;
-  text-align: center;
-
+  font-size: 2.5em;
 }
 
+a,
 h1,
 h2,
 h3,
@@ -40,18 +33,9 @@ h4 {
   font-weight: bold;
 }
 
-a {
-  color: #304269;
-  font-weight: bold;
-  text-decoration: none;
-}
-
+a,
 nav li {
-  float: right;
-  margin-top: 25px;
-  padding-right: 15px;
   text-decoration: none;
-  text-align: center;
 }
 
 nav a {
@@ -63,31 +47,75 @@ h1 a:hover {
   color: #91BED4;
 }
 
+.wrapper {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/* HEADER STYLES */
+
+header {
+  background: #F26101;
+  border-bottom: 2px solid #304269;
+  height: 130px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+h1 {
+  padding: 25px 0 0 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+nav li {
+  display: inline-block;
+  margin: 20px 10px;
+  text-align: center;
+}
+
 /* MAIN BODY STYLES */
 .wrapper {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 80px;
-  font-size: 24px;
 }
 
 h2 {
-  font-size: 40px;
   margin: 10px 0 20px 0;
   text-align: center;
 }
 
 h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+h4,
+.history-dates,
+.history-content li {
+  margin: 10px 0;
 }
 
 .casey {
-  height: 350px;
-  max-width: 300px;
-  margin: 20px auto 0 auto;
   display: block;
+  height: 350px;
+  margin: 20px auto 0 auto;
+  max-width: 300px;
 }
 
 section {
@@ -106,9 +134,9 @@ section, .centered {
   margin-top: 80px;
 }
 
-.about-me {
-  text-align: justify;
+.main-text {
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .projects-title {
@@ -116,24 +144,15 @@ section, .centered {
 }
 
 .my-projects h3 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.about-project,
-.additional-project-info {
-  max-width: 80%;
-  padding: 20px;
-  margin: auto;
+.project-about,
+.project-addtl-info {
   border: 2px solid #304269;
-}
-
-.about-project {
-  border-bottom: 0;
-}
-
-.additional-project-info {
-  border-top: 0;
-  padding-top: 30px;
+  margin: auto;
+  max-width: 90%;
+  padding: 20px;
 }
 
 .project-pics {
@@ -141,11 +160,18 @@ section, .centered {
   margin-top: 50px;
   max-width: 300px;
 }
-/*span {
-  height: 20px;
-  width: 600px;
-  border-bottom: 2px solid #304269;
-}*/
+
+.project-about {
+  border-bottom: 0;
+}
+
+.project-addtl-info {
+  border-top: 0;
+}
+
+.project-addtl-info li, p {
+  margin: 20px 0;
+}
 
 .my-history h2 {
   margin-top: 50px;
@@ -155,24 +181,22 @@ aside {
   margin-left: 40px;
 }
 
-.education,
-.work-experience {
-  padding-bottom: 30px;
+.history-content {
   border-bottom: 2px solid #304269;
+  padding-bottom: 30px;
 }
 
 .contact-page h2 {
   margin-top: 30px;
 }
 
-.contact-info {
-  list-style-type: none;
-  margin: 40px auto;
-  width: 200px;
-}
-
 .blurb {
   text-align: center;
+}
+
+.contact-container {
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 /* FOOTER STYLES */
@@ -181,7 +205,7 @@ footer {
   background: #304269;
   border-top: 2px solid #F26101;
   color: #D9E8F5;
-  height: 100px;
+  height: 150px;
   margin-top: 10px;
   text-align: center;
 }
@@ -202,39 +226,64 @@ footer li {
 
 @media screen and (min-width: 650px){
 
+  header {
+    height: 100px;
+  }
+
   h1 {
+    float: left;
     font-size: 4em;
+  }
+
+  nav {
+    max-width: 50%;
+    float: right;
   }
 
   nav li {
     font-size: 1.7em;
+    margin-top: 40px;
     padding-right: 30px;
-    margin-top: 20px;
   }
 
-  .about-project,
-  .additional-project-info {
-    max-width: 40%;
-    height: 500px;
+  .casey {
+    margin: 40px auto;
+  }
+
+  .my-projects article {
+    border-top: 2px solid #F26101;
+    height: 600px;
+    max-width: 50%;
+    padding: 0 10px;
+  }
+
+  .project-collab {
+    margin-top: 70px;
+  }
+
+  .project-about,
+  .project-addtl-info {
     border: none;
+    height: 500px;
+    width: 50%;
   }
 
-  .about-project {
+  .project-about {
     float: left;
   }
 
-  .additional-project-info {
-    padding-top: 90px;
-    float:right;
+  .project-description {
+    padding-right: 25px;
   }
 
-  .education,
+  .project-addtl-info {
+    float:right;
+    padding-top: 90px;
+  }
+
+  .history-content,
   .my-projects {
     border-top: 2px solid #304269
-  }
-
-  .face {
-    margin-bottom: 50px;
   }
 
 }
