@@ -4,6 +4,7 @@ var assert     = require('assert');
 
 describe('Accessibility testing', function(){
  var browser ;
+ 
  beforeEach(function(done) {
     browser = new selenium.Builder()
     .forBrowser('chrome')

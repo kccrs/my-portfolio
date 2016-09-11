@@ -20,3 +20,20 @@ module.exports = {
     extensions: ['', '.js', '.json', '.scss', '.css']
   }
 };
+
+var sass    = require('node-sass');
+var neat = require('node-neat');
+
+sass.render({
+  file: './styles.scss',
+  success: function(css){
+    console.log(css);
+  },
+  error: function(error) {
+    console.log(error);
+  },
+  // includePaths: neat.with('other/path', 'another/path'),
+  // - or -
+  includePaths: neat.includePaths,
+  outputStyle: 'compressed'
+});

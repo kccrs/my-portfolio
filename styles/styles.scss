@@ -1,5 +1,7 @@
 @import "_reset";
-// @import "_variables";
+@import "neat/neat";
+@import "_variables";
+@import "_reusable-header";
 
 /* WHOLE PAGE STYLES */
 html {
@@ -9,10 +11,170 @@ html {
   box-sizing: inherit;
 }
 
-html, body {
+body {
   background-color: #D9E8F5;
+  font-family: $header-font;
 }
 
 p {
   line-height: 1.3em;
+}
+
+.wrapper {
+  @include outer-container;
+  font-size: 22px;
+  // display: flex;
+  // flex-direction: column;
+  padding-top: 30%;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -150px;
+  // position: relative;
+  &:after {
+    content: "";
+    display: block;
+    height: 150px;
+  }
+}
+
+h2 {
+  font-size: 34px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+h4,
+.history-dates,
+.history-content li {
+  margin: 10px 0;
+}
+
+.casey {
+  // @include span-columns(12);
+  // @include shift(2);
+  display: block;
+  height: 300px;
+  margin: 20px auto 0 auto;
+  max-width: 300px;
+}
+
+section {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+// section, .centered {
+//   margin: 0 auto;
+// }
+
+// .centered {
+//   width: 80%;
+// }
+
+.main-content {
+  margin-top: 80px;
+}
+
+.main-text {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.projects-title {
+  margin-top: 50px;
+}
+
+.my-projects {
+  // @include outer-container;
+  // margin: 0 auto;
+}
+
+.my-projects h3 {
+  margin-top: 20px;
+}
+
+.project-about,
+.project-addtl-info {
+  border: 2px solid #304269;
+  // margin: auto;
+  // max-width: 90%;
+  padding: 15px;
+}
+
+.project-pics {
+  @include span-columns(11);
+  display: block;
+  margin-bottom: 20px;
+  // margin-left: 50px;
+  // margin-top: 50px;
+  // max-width: 300px;
+}
+
+.project-about {
+  border-bottom: 0;
+}
+
+.project-addtl-info {
+  border-top: 0;
+}
+
+.project-addtl-info li, p {
+  margin: 20px 0;
+}
+
+.my-history h2 {
+  margin-top: 50px;
+}
+
+aside {
+  margin-left: 40px;
+}
+
+.history-content {
+  border-bottom: 2px solid #304269;
+  padding-bottom: 30px;
+  li {
+    line-height: 1.2em;
+  }
+}
+
+.contact-page h2 {
+  margin-top: 30px;
+}
+
+.blurb {
+  text-align: center;
+}
+
+.contact-container {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background: #304269;
+  border-top: 2px solid #F26101;
+  color: #D9E8F5;
+  height: 150px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer p {
+  padding: 10px 0px;
+}
+
+footer li {
+  display: inline-block;
+}
+
+.social-media-logo {
+  max-width: 25px;
 }
