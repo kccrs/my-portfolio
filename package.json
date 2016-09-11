@@ -6,7 +6,9 @@
   "scripts": {
     "test": "mocha",
     "start": "node server.js",
-    "sel": "java -jar selenium-server-standalone-2.53.0.jar"
+    "sel": "java -jar selenium-server-standalone-2.53.0.jar",
+    "wpstart": "webpack-dev-server",
+    "build": "webpack"
   },
   "keywords": [
     "axe"
