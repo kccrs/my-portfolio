@@ -15,7 +15,7 @@ h1 {
   background: url('/../images/clouds.png') no-repeat;
   float: left;
   margin-left: 10px;
-  height: 15vh;
+  height: 13vh;
   width: 50%;
   text-indent: -9999px;
 }
@@ -34,14 +34,16 @@ h1 {
 }
 
 .main-list-item {
-  background-color: transparentize($content-card-primary, 0.1);
+  background-color: $content-card-primary;
   border-bottom: 1px solid $nav-border;
-  position: relative;
+  letter-spacing: .05em;
+  // position: relative;
   > a {
     color: white;
     display: block;
+    letter-spacing: .05em;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
     padding: 1.5rem 0;
     text-decoration: none;
     transition: 250ms all ease;
@@ -119,14 +121,16 @@ h1 {
 
   .main-list-item {
     background-color: $nav-border;
-    line-height: 50px;
+    // line-height: 50px;
     > a {
       padding: 0 1.25rem;
+      padding-top: 10px;
       &:hover > nav {
         background-color: rgb(51,51,51);
         border-radius: .25em;
         box-shadow: 0 2px 8px rgba(0,0,0,.6);
         display: block;
+        margin-bottom: 4px;
         width: 196px;
       }
     }
