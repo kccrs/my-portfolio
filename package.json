@@ -1,0 +1,40 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "sel": "java -jar selenium-server-standalone-2.53.0.jar"
+  },
+  "keywords": [
+    "axe"
+  ],
+  "author": "Casey Cross",
+  "license": "MIT",
+  "devDependencies": {
+    "axe-core": "^2.0.5",
+    "axe-webdriverjs": "^0.3.0",
+    "ecstatic": "^2.1.0",
+    "mocha": "^3.0.2",
+    "selenium-webdriver": "^3.0.0-beta-2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^3.0.0-beta-2",
+    "axe-webdriverjs": "^0.3.0",
+    "axe-core": "^2.0.5",
+    "ecstatic": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kccrs/ccportfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kccrs/ccportfolio/issues"
+  },
+  "homepage": "https://github.com/kccrs/ccportfolio#readme"
+}
