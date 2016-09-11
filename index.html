@@ -6,6 +6,8 @@
     <title>Casey Cross</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Forum" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -21,10 +23,9 @@
       <nav class="main-nav">
   		  <ul class="main-list">
           <li class="main-list-item"><a href="#">Home</a></li>
-          <li class="main-list-item"><a href="#">Link</a></li>
-          <li class="main-list-item"><a href="#">Link</a></li>
-          <li class="main-list-item"><a href="#">Link</a></li>
-          <li class="main-list-item"><a href="#">Link</a></li>
+          <li class="main-list-item"><a href="#projects">Projects</a></li>
+          <li class="main-list-item"><a href="#history">Background</a></li>
+          <li class="main-list-item"><a href="#contact">Contact</a></li>
         </ul>
     	</nav>
     </header>
@@ -49,7 +50,10 @@
       <section class="main-content centered">
         <h2>About Me</h2>
         <p class="main-text">
-          I am a front end developer living in gorgeous Denver, Colorado.  I take pride in providing a clean, engaging, and interactive web experience for your users.  I use the latest web technologies to ensure your site is useful and accessible.    I am passionate about web development.  I would like to use my skills for good, not evil.  In my free time, I would like to help teach kids to code, especially kids who are underrepresented in the tech community, such as girls and minorities.  I want to give them a leg up into an exciting future.I seek to join a team that encourages growth and collaboration.
+          I am a front end developer in gorgeous Denver, Colorado.  I take pride in providing a clean, engaging, and interactive web experience.  I use the latest web technologies to ensure your site is useful and accessible.    I am passionate about web development and promise to only use my skills for good, not evil.
+        </p>
+        <p class="main-text">
+          In my free time, I would like to help teach kids to code, especially kids who are underrepresented in the tech community, such as girls and minorities.  I want to give them a leg up into an exciting future.  I seek to join a team that encourages growth and collaboration.
         </p>
         <p class="main-text">
           When I'm not coding, you can find me camping, reading, watching football, or enjoying all of the cheeses.
@@ -59,55 +63,6 @@
       <a name="projects"></a>
       <section class="my-projects">
         <h2 class="projects-title">Projects</h2>
-        <article class="project-about">
-          <h3>Number Guesser Game</h3>
-          <p class="project-description">
-            This number guessing game is one of my earliest projects as I was beginning to learn JavaScript.  The computer chooses a random number and the player tries to guess that number within the specified range.  The range automatically increases with each successive round.
-          </p>
-          <img src="images/number-guesser.png" alt="Number Guesser Game Screenshot" class="project-pics">
-        </article>
-        <article class="project-addtl-info">
-          <p class="project-collab">
-            This project was a collaboration between myself and Brett Hevia.
-          </p>
-          <p class="github-link">
-            Here is the link to the work on <a href="https://github.com/kccrs/number-guesser-1">GitHub.</a>
-          </p>
-          <p>
-            <h3>Tools Used</h3>
-            <ul class="project-tools">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>Git</li>
-            </ul>
-          </p>
-        </article>
-        <article class="project-about">
-          <h3>Linky List</h3>
-          <p class="project-description">
-            What is linky list, you ask?  Why, it's a list of links!  Are you tired of forgetting websites you want to visit?  No more!  Let this site do your remembering for you, freeing up precious brain space. This was my second project at Turing and my introduction to using jQuery.
-          </p>
-          <img src="images/linky-list.png" alt="Linky-List Screenshot" class="project-pics">
-        </article>
-        <article class="project-addtl-info">
-          <p class="project-collab">
-            This project was a collaboration between myself and Ben Godfrey.
-          </p>
-          <p class="github-link">
-            Here is the link to the work on <a href="https://github.com/kccrs/linky-list">GitHub.</a>
-          </p>
-          <p>
-            <h3>Tools Used</h3>
-            <ul class="project-tools">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>Git</li>
-            </ul>
-          </p>
-        </article>
         <article class="project-about">
           <h3>Color Changer</h3>
           <p class="project-description">
@@ -184,6 +139,87 @@
             </ul>
           </p>
         </article>
+        <article class="project-about">
+          <h3>Pomodoro App</h3>
+          <p class="project-description">
+            This is one of my favorite projects where we built a functional Pomodoro app to remind us to take meaningful breaks while coding.
+          </p>
+          <img src="images/ideabox.png" alt="Pomodoro App Screenshot" class="project-pics">
+        </article>
+        <article class="project-addtl-info">
+          <p class="project-collab">
+            This project was a collaboration between myself and Madison Kerndt.
+          </p>
+          <p class="github-link">
+            Here is the link to the work on <a href="https://github.com/kccrs/pomodoro-app">GitHub.</a>
+          </p>
+          <p>
+            <h3>Tools Used</h3>
+            <ul class="project-tools">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass/SCSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>localStorage</li>
+              <li>Git</li>
+              <li>TDD</li>
+            </ul>
+          </p>
+        </article>
+        <article class="project-about">
+          <h3>Style Guide</h3>
+          <p class="project-description">
+            Style guides provide useful design parameters to develop consistent and reusable content containers. These modular elements are responsive and easily adapted into any project.  This style guide features design and code samples for creating a responsive drop-down navigation menu, high-impact content cards, accordion tabs, and more.
+          </p>
+          <img src="images/ideabox.png" alt="Style Guide Screenshot" class="project-pics">
+        </article>
+        <article class="project-addtl-info">
+          <p class="project-collab">
+            This project was completed independently.
+          </p>
+          <p class="github-link">
+            Here is the link to the work on <a href="https://github.com/kccrs/style-guide">GitHub.</a>
+          </p>
+          <p>
+            <h3>Tools Used</h3>
+            <ul class="project-tools">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass/SCSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Git</li>
+            </ul>
+          </p>
+        </article>
+        <article class="project-about">
+          <h3>Font Pairing Challenges</h3>
+          <p class="project-description">
+            In an attempt to study how fonts can work together to create inventive and coherent design elements, I was inspired by designer Do-Hee Kim's project, <a href="http://100daysoffonts.com/">"100 Days of Fonts"</a> to create my own, much smaller iteration of this idea.
+          </p>
+          <img src="images/seven-weeks-of-fonts.png" alt="Font Pairings Screenshot" class="project-pics">
+        </article>
+        <article class="project-addtl-info">
+          <p class="project-collab">
+            This project was completed independently.
+          </p>
+          <p class="github-link">
+            Here is the link to the work on <a href="https://github.com/kccrs/six-weeks-of-fonts">GitHub.</a>
+          </p>
+          <p>
+            <h3>Tools Used</h3>
+            <ul class="project-tools">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass/SCSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Git</li>
+            </ul>
+          </p>
+        </article>
+
       </section>
       <a name="history"></a>
       <section class="my-history">
@@ -192,19 +228,16 @@
           <h3>Turing School of Software and Design</h3>
           <aside>
             <h4>Certificate in Front End Engineering</h4>
-            <p class="history-dates">June 2016 - January 2017</p>
           </aside>
           <h3>University of Colorado Denver</h3>
           <aside>
             <h4>Master of Arts</h4>
             <p>Curriculum and Instruction - Elementary Math Leadership</p>
-            <p class="history-dates">2008 - 2010<p>
           </aside>
           <h3>University of Florida</h3>
           <aside>
             <h4>Bachelor of Science</h4>
             <p>Psychology</p>
-            <p class="history-dates">1994 - 1998</p>
           </aside>
         </article>
         <article class="history-content">
@@ -222,7 +255,7 @@
           <h3>Denver Public Schools</h3>
           <aside>
             <h4>Fourth Grade Teacher</h4>
-            <p class="history-dates">2013 - 2014</p>
+            <p class="history-dates">2013-2014</p>
             <ul>
               <li>
                 Differentiated instruction across three tiers of intervention.
@@ -251,24 +284,24 @@
           <img class="casey" src="images/feet.jpg" alt="Photo of Casey">
         </article>
       </section>
-      <footer>
-        <p>Reach out to me at:</p>
-        <ul>
-          <li>
-            <a href="https://twitter.com/kccrs"><img src="images/twitter-clear.png" class="social-media-logo" alt="Twitter logo"></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/caseycross"><img src="images/linkedin.png" class="social-media-logo" alt="LinkedIn logo"></a>
-          </li>
-          <li>
-            <a href="mailto:hellocaseycross@gmail.com"><img src="images/mail-clear.png" class="social-media-logo" alt="Email logo"></a>
-          </li>
-          <li>
-            <a href="https://github.com/kccrs"><img src="images/github.png" class="social-media-logo" alt="GitHub logo"></a>
-          </li>
-        </ul>
-      </footer>
     </div> <!-- End of wrapper div -->
+    <footer>
+      <p>Reach out to me at:</p>
+      <ul>
+        <li>
+          <a href="https://twitter.com/kccrs"><img src="images/twitter-clear.png" class="social-media-logo" alt="Twitter logo"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/caseycross"><img src="images/linkedin.png" class="social-media-logo" alt="LinkedIn logo"></a>
+        </li>
+        <li>
+          <a href="mailto:hellocaseycross@gmail.com"><img src="images/mail-clear.png" class="social-media-logo" alt="Email logo"></a>
+        </li>
+        <li>
+          <a href="https://github.com/kccrs"><img src="images/github.png" class="social-media-logo" alt="GitHub logo"></a>
+        </li>
+      </ul>
+    </footer>
   <script src="main.bundle.js"></script>
   <script src="node_modules/axe-core/axe.min.js" ></script>
   </body>

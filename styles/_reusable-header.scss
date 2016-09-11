@@ -4,11 +4,15 @@ h1 {
 
 .main-header {
   background-color: $content-card-primary;
-  border: 1.5px solid $nav-border;
+  border: 2px solid $nav-border;
   display: flex;
   height: 20vh;
   flex-direction: column;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
 }
 
 .title {
@@ -26,6 +30,11 @@ h1 {
   transform: 300ms all ease;
 }
 
+.menu {
+  font-size: 32px;
+  letter-spacing: .1rem;
+}
+
 .main-list {
   list-style-type: none;
   &:first-child {
@@ -36,14 +45,14 @@ h1 {
 .main-list-item {
   background-color: $content-card-primary;
   border-bottom: 1px solid $nav-border;
-  letter-spacing: .05em;
+  // font-size: 32px;
+  // letter-spacing: .1em;
   // position: relative;
   > a {
     color: white;
     display: block;
-    letter-spacing: .05em;
-    font-size: 18px;
-    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 28px;
     padding: 1.5rem 0;
     text-decoration: none;
     transition: 250ms all ease;
@@ -92,7 +101,7 @@ h1 {
   }
 }
 
-@media all and (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
   #navToggle {
     display: none;
@@ -101,7 +110,7 @@ h1 {
   .main-nav {
     display: block;
     float: right;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: 8%;
     position: absolute;
     width: 70%;
@@ -121,10 +130,10 @@ h1 {
 
   .main-list-item {
     background-color: $nav-border;
+    padding-top: 10px;
     // line-height: 50px;
     > a {
       padding: 0 1.25rem;
-      padding-top: 10px;
       &:hover > nav {
         background-color: rgb(51,51,51);
         border-radius: .25em;
@@ -137,15 +146,15 @@ h1 {
   }
 }
 
-@media all and (min-width: 700px) {
+@media screen and (min-width: 700px) {
 
   .nav-title {
     padding-top: 0;
   }
 
-  img {
-    margin-top: 10%;
-  }
+  // img {
+  //   margin-top: 10%;
+  // }
 
   .main-nav {
     margin-top: 6%;
@@ -155,16 +164,22 @@ h1 {
     height: 50px;
   }
 
-  .main-list-item a {
-    font-size: 24px;
+  // .main-list-item a {
+  //     font-size: 24px;
+  // }
+}
+
+@media screen and (min-width: 780px) {
+  .main-list-item  {
+    margin-top: 10px;
   }
 }
 
-@media all and (min-width: 950px) {
+@media screen and (min-width: 950px) {
 
-  img {
-    margin-top: 8%;
-  }
+  // img {
+  //   margin-top: 8%;
+  // }
 
   .main-nav {
     margin-top: 5%;

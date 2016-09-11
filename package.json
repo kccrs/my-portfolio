@@ -8,7 +8,9 @@
     "start": "node server.js",
     "sel": "java -jar selenium-server-standalone-2.53.0.jar",
     "wpstart": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "build-css": "node-sass --include-path scss styles/styles.scss   styles/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [
     "axe"
