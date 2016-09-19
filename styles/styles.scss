@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #D9E8F5;
+  background-color: $content-card-button-hover;
   font-family: $header-font;
 }
 
@@ -22,7 +22,7 @@ p {
 }
 
 .wrapper {
-  @include outer-container;
+  @include outer-container(100%);
   font-size: 22px;
   // display: flex;
   // flex-direction: column;
@@ -46,7 +46,8 @@ h2 {
 
 h3 {
   font-size: 28px;
-  margin: 20px 0;
+  margin: 20px auto;
+  text-align: center;
 }
 
 h4,
@@ -61,7 +62,11 @@ section {
 }
 
 .main-content {
-  margin-top: 80px;
+  margin-top: 40px;
+}
+
+.main-content h3 {
+  font-size: 22px;
 }
 
 .main-text {
@@ -69,33 +74,23 @@ section {
   text-align: justify;
 }
 
-.projects-title {
-  margin-top: 50px;
+.projects-section-title,
+.education,
+.experience,
+.contact-page h2  {
+  border-bottom: 2px solid $bronco-blue;
+  border-top: 2px solid $bronco-blue;
+  color: $bronco-blue;
+  font-weight: bold;
+  padding: 30px 0;
 }
 
-.my-projects {
-  // @include outer-container;
-  // margin: 0 auto;
-}
-
-.my-projects h3 {
-  margin-top: 20px;
-}
-
-.project-about,
-.project-addtl-info {
-  // border: 2px solid $bronco-blue;
-  // margin: auto;
-  // max-width: 90%;
-  padding: 15px;
-}
-
-.project-about {
-  border-bottom: 0;
-}
-
-.project-addtl-info {
-  border-top: 0;
+.project-title {
+  color: $gator-orange;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .project-addtl-info li, p {
@@ -107,19 +102,14 @@ section {
 }
 
 aside {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .history-content {
-  border-bottom: 2px solid $bronco-blue;
   padding-bottom: 30px;
   li {
     line-height: 1.2em;
   }
-}
-
-.contact-page h2 {
-  margin-top: 30px;
 }
 
 .blurb {
@@ -136,7 +126,7 @@ aside {
 footer {
   background: $bronco-blue;
   border-top: 2px solid $gator-orange;
-  color: #D9E8F5;
+  color: $content-card-button-hover;
   height: 150px;
   margin-top: 10px;
   text-align: center;
