@@ -1,4 +1,4 @@
-require('./styles/styles');
+// require('./styles/styles');
 const $ = require('jquery');
 
 $(document).ready(function() {

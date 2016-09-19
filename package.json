@@ -35,10 +35,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kccrs/ccportfolio.git"
+    "url": "git+https://github.com/kccrs/my-portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/kccrs/ccportfolio/issues"
+    "url": "https://github.com/kccrs/my-portfolio/issues"
   },
-  "homepage": "https://github.com/kccrs/ccportfolio#readme"
+  "homepage": "https://github.com/kccrs/my-portfolio#readme"
 }

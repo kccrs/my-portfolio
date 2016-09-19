@@ -1,0 +1,46 @@
+@import "neat/neat";
+
+.casey {
+  // @include span-columns(12);
+  // @include shift(2);
+  display: block;
+  height: 300px;
+  margin: 20px auto 0 auto;
+  max-width: 300px;
+}
+
+.project-pics {
+  @include span-columns(11);
+  display: block;
+  margin-bottom: 20px;
+  // margin-left: 50px;
+  // margin-top: 50px;
+  // max-width: 300px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.turing,
+.bvsd {
+  max-height: 80px;
+}
+
+.ucd,
+.uf {
+  max-height: 50px;
+}
+
+.welldyne {
+  max-height: 70px;
+}
+
+.dps {
+  max-height: 100px;
+}
+
+.social-media-logo {
+  max-width: 25px;
+}

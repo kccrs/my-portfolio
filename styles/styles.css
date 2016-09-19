@@ -51,6 +51,49 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.casey {
+  display: block;
+  height: 300px;
+  margin: 20px auto 0 auto;
+  max-width: 300px; }
+
+.project-pics {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  display: block;
+  margin-bottom: 20px; }
+  .project-pics:last-child {
+    margin-right: 0; }
+
+.logo {
+  display: block;
+  margin: 0 auto; }
+
+.turing,
+.bvsd {
+  max-height: 80px; }
+
+.ucd,
+.uf {
+  max-height: 50px; }
+
+.welldyne {
+  max-height: 70px; }
+
+.dps {
+  max-height: 100px; }
+
+.social-media-logo {
+  max-width: 25px; }
+
 h1 {
   margin-top: 25px; }
 
@@ -226,12 +269,6 @@ h4,
 .history-content li {
   margin: 10px 0; }
 
-.casey {
-  display: block;
-  height: 300px;
-  margin: 20px auto 0 auto;
-  max-width: 300px; }
-
 section {
   float: left;
   display: block;
@@ -256,18 +293,7 @@ section {
 
 .project-about,
 .project-addtl-info {
-  border: 2px solid #304269;
   padding: 15px; }
-
-.project-pics {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 91.4702%;
-  display: block;
-  margin-bottom: 20px; }
-  .project-pics:last-child {
-    margin-right: 0; }
 
 .project-about {
   border-bottom: 0; }
@@ -314,6 +340,3 @@ footer p {
 
 footer li {
   display: inline-block; }
-
-.social-media-logo {
-  max-width: 25px; }

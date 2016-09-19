@@ -1,6 +1,7 @@
 @import "_reset";
 @import "neat/neat";
 @import "_variables";
+@import "_images";
 @import "_reusable-header";
 
 /* WHOLE PAGE STYLES */
@@ -54,27 +55,10 @@ h4,
   margin: 10px 0;
 }
 
-.casey {
-  // @include span-columns(12);
-  // @include shift(2);
-  display: block;
-  height: 300px;
-  margin: 20px auto 0 auto;
-  max-width: 300px;
-}
-
 section {
   @include span-columns(10);
   @include shift(1);
 }
-
-// section, .centered {
-//   margin: 0 auto;
-// }
-
-// .centered {
-//   width: 80%;
-// }
 
 .main-content {
   margin-top: 80px;
@@ -100,19 +84,10 @@ section {
 
 .project-about,
 .project-addtl-info {
-  border: 2px solid #304269;
+  // border: 2px solid $bronco-blue;
   // margin: auto;
   // max-width: 90%;
   padding: 15px;
-}
-
-.project-pics {
-  @include span-columns(11);
-  display: block;
-  margin-bottom: 20px;
-  // margin-left: 50px;
-  // margin-top: 50px;
-  // max-width: 300px;
 }
 
 .project-about {
@@ -136,7 +111,7 @@ aside {
 }
 
 .history-content {
-  border-bottom: 2px solid #304269;
+  border-bottom: 2px solid $bronco-blue;
   padding-bottom: 30px;
   li {
     line-height: 1.2em;
@@ -159,8 +134,8 @@ aside {
 /* FOOTER STYLES */
 
 footer {
-  background: #304269;
-  border-top: 2px solid #F26101;
+  background: $bronco-blue;
+  border-top: 2px solid $gator-orange;
   color: #D9E8F5;
   height: 150px;
   margin-top: 10px;
@@ -173,8 +148,4 @@ footer p {
 
 footer li {
   display: inline-block;
-}
-
-.social-media-logo {
-  max-width: 25px;
 }
