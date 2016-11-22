@@ -12,7 +12,7 @@ const Root = () =>  {
     <BrowserRouter>
       <div>
         <Match exactly pattern="/" component={App} />
-        <Match pattern="/project/:projectId" component={Project} />
+        <Match pattern="/projects/:projectId" component={Project} />
         <Miss component={NotFound} />
       </div>
     </BrowserRouter>
