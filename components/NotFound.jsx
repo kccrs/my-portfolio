@@ -5,7 +5,7 @@ export default class NotFound extends Component {
   render() {
     return (
       <div className="NotFound">
-        <p className="404">Page Not Found</p>
+        <p className="error">Error 404: Page Not Found</p>
       </div>
     );
   }
