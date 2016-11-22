@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500');
-@import url('https://fonts.googleapis.com/css?family=Play');
-
 // Fonts
-// $font-home-page: 'Orbitron', sans-serif;
-// $font-home-page-secondary: 'Play', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Cagliostro|Macondo|Simonetta');
+
+$font-main: 'Macondo', serif;
+$font-secondary: 'Cagliostro', sans-serif;
+$font-tertiary: 'Simonetta', serif;
 
 // Colors
 $color-main: #18216A;
@@ -12,5 +13,6 @@ $color-accent-rose: #D1547C;
 $color-accent-green: #6BD99A;
 $color-accent-blue: #274BA3;
 $color-accent-orange: #ECA383;
+$color-accent-light-blue: #5E89BD;
 // $color-space-medium: lighten($color-space, 40);
 // $color-space-light: lighten($color-space, 60);
