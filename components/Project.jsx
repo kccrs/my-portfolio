@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
+
 
 export default class Project extends Component {
 
@@ -14,8 +16,21 @@ export default class Project extends Component {
 
   render () {
 
-    return (
+    let currentProject = this.props.params.pageId;
 
+    let projectClass = classnames('single-project', currentProject);
+
+
+    return (
+      <article className=>
+        // project title
+        <h3 className="project-title"></h3>
+        // project description
+        // image
+        // collaborators
+        // website urls
+        // tools
+      </article>
     );
   }
 }

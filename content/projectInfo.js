@@ -1,8 +1,8 @@
 const projectInfo = {
   colorChanger: {
     projectTitle: 'Color Changer',
-    pageText:
-              'This is a fun little program, especially if you really respond to colors like I do.  It reminds me of a remarkable exhibit called Mood Lighting I experienced at the <a href="http://www.exploratorium.edu/"> Exploratorium</a> in San Francisco.  You place your head inside a large sphere that illuminates with varying colors which you can manually adjust.  It was a unique immersive experience that invoked strong emotional reactions. You can check that out <a href="http://www.exploratorium.edu/mind/about/more_exhibits.html">here.</a>',
+    aboutProject:
+                  'This is a fun little program, especially if you really respond to colors like I do.  It reminds me of a remarkable exhibit called Mood Lighting I experienced at the <a href="http://www.exploratorium.edu/"> Exploratorium</a> in San Francisco.  You place your head inside a large sphere that illuminates with varying colors which you can manually adjust.  It was a unique immersive experience that invoked strong emotional reactions. You can check that out <a href="http://www.exploratorium.edu/mind/about/more_exhibits.html">here.</a>',
     imageSrc: '../content/images/color-changer.png',
     imageClassName: 'project-image color-changer',
     imageAlt: 'A screenshot of my Color Changer project.',
@@ -18,8 +18,8 @@ const projectInfo = {
   },
   ideaBox: {
     projectTitle: 'IdeaBox',
-    pageText:
-              'This is a site that will store all of your ideas into localStorage.  You can also rank your ideas based on their quality.  Perhaps your ideas are garbage?  If so, you can let everyone know.',
+    aboutProject:
+                  'This is a site that will store all of your ideas into localStorage.  You can also rank your ideas based on their quality.  Perhaps your ideas are garbage?  If so, you can let everyone know.',
     imageSrc: '../content/images/ideabox.png',
     imageClassName: 'project-image ideabox',
     imageAlt: 'A screenshot of my IdeaBox project.',
@@ -35,8 +35,8 @@ const projectInfo = {
   },
   snakePlane: {
     projectTitle: 'Snake on a Plane',
-    pageText:
-              'This is a version of the classic game Snake but with a fun nod to the cheese-tastic movie "Snakes on a Plane".',
+    aboutProject:
+                  'This is a version of the classic game Snake but with a fun nod to the cheese-tastic movie "Snakes on a Plane".',
     imageSrc: '../content/images/snake-on-plane-screenshot.png',
     imageClassName: 'project-image snake-on-plane',
     imageAlt: 'A screenshot of my Snake on a Plane project.',
@@ -52,8 +52,8 @@ const projectInfo = {
   },
   pomodoro: {
     projectTitle: 'Pomodoro Timer',
-    pageText:
-              'This is one of my favorite projects where we built a functional Pomodoro app to remind us to take meaningful breaks while coding.',
+    aboutProject:
+                  'This is one of my favorite projects where we built a functional Pomodoro app to remind us to take meaningful breaks while coding.',
     imageSrc: '../content/images/pomodoro.png',
     imageClassName: 'project-image pomodoro',
     imageAlt: 'A screenshot of my Pomodoro project.',
@@ -69,8 +69,8 @@ const projectInfo = {
   },
   fontPair: {
     projectTitle: 'Font Pairing',
-    pageText:
-              'In an attempt to study how fonts can work together to create inventive and coherent design elements, I was inspired by designer Do-Hee Kim\'s project, <a href="http://100daysoffonts.com/">"100 Days of Fonts"</a> to create my own, much smaller iteration of this idea.',
+    aboutProject:
+                  'In an attempt to study how fonts can work together to create inventive and coherent design elements, I was inspired by designer Do-Hee Kim\'s project, <a href="http://100daysoffonts.com/">"100 Days of Fonts"</a> to create my own, much smaller iteration of this idea.',
     imageSrc: '../content/images/seven-weeks-of-fonts.png',
     imageClassName: 'project-image seven-weeks-of-fonts',
     imageAlt: 'A screenshot of my Font Pairing project.',
@@ -86,8 +86,8 @@ const projectInfo = {
   },
   shootBreeze: {
     projectTitle: 'Shoot the Breeze',
-    pageText:
-              'There just aren\'t enough chat apps in the world, now are there?  Don\'t worry, I\'ve got one for you! Shoot the breeze is built using React and Firebase and allows you a direct private connection between friends, co-workers, enemies, and anyone else you\'d like to share your deep thoughts and feelings with. This app was built to match a design spec that resulted in nearly 100% accuracy with the comp. If it were up to me, I would have made some different design choices, but I am proud of this app.',
+    aboutProject:
+                  'There just aren\'t enough chat apps in the world, now are there?  Don\'t worry, I\'ve got one for you! Shoot the breeze is built using React and Firebase and allows you a direct private connection between friends, co-workers, enemies, and anyone else you\'d like to share your deep thoughts and feelings with. This app was built to match a design spec that resulted in nearly 100% accuracy with the comp. If it were up to me, I would have made some different design choices, but I am proud of this app.',
     imageSrc: '../content/images/shoot-the-breeze.png',
     imageClassName: 'project-image shoot-the-breeze',
     imageAlt: 'A screenshot of my Shoot the Breeze project.',
@@ -103,8 +103,8 @@ const projectInfo = {
   },
   globot: {
     projectTitle: 'GloBot',
-    pageText:
-              'This is an interactive, choose-your-own-adventure style children\'s story about a robot in outer space.  I built this in React and used dynamic SVGs and CSS  transformations and animations.  I also implemented a text-to-speech API to enable children who are learning to read, English language learners, and people with a disability to access and enjoy the story.',
+    aboutProject:
+                  'This is an interactive, choose-your-own-adventure style children\'s story about a robot in outer space.  I built this in React and used dynamic SVGs and CSS  transformations and animations.  I also implemented a text-to-speech API to enable children who are learning to read, English language learners, and people with a disability to access and enjoy the story.',
     imageSrc: '../content/images/globot.png',
     imageClassName: 'project-image globot',
     imageAlt: 'A screenshot of my GloBot project.',

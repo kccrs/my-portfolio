@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import projectInfo from '../content/projectInfo';
 
 export default class Image extends Component {
   render () {
@@ -6,7 +7,7 @@ export default class Image extends Component {
 
     return (
       <img
-        src={storyText[projectId].imageUrl} className={storyText[projectId].imageClassName} alt={storyText[projectId].imageAlt}
+        src={projectInfo[projectId].imageUrl} className={projectInfo[projectId].imageClassName} alt={projectInfo[projectId].imageAlt}
       />
     );
   }
