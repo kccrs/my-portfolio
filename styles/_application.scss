@@ -1,5 +1,6 @@
 html {
   @include global-box-sizing(border-box);
+  color: $color-main;
   height: 100%;
   min-width: 100%;
 }

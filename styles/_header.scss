@@ -1,0 +1,60 @@
+header {
+  height: 100vh;
+  max-width: 30%;
+  // border: 1px solid red;
+  padding-right: 10px;
+  text-align: right;
+}
+
+nav {
+  @include font-size(40px);
+  font-family: $font-raleway;
+  height: 65vh;
+  // border: 1px solid black;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  // border: 1px solid green;
+
+}
+
+a {
+  text-decoration: none;
+  color: $color-main;
+  // border: 1px solid purple;
+
+}
+
+.logo {
+  height: 35vh;
+  padding-top: 20%;
+  // border: 1px solid darkblue;
+}
+
+.my-name {
+  @include font-size(50px);
+  font-family: $font-main;
+  // border: 1px solid orange;
+
+}
+
+.my-title {
+  @include font-size(20px);
+  font-family: $font-raleway;
+  font-weight: 300;
+  margin-top: 20px;
+  // border: 1px solid turquoise;
+
+}
+
+.copyright {
+  @include font-size(10px);
+  font-family: $font-raleway;
+  font-weight: 300;
+  // border: 1px solid magenta;
+  margin-top: 30px;
+}
