@@ -8,13 +8,8 @@ const projectInfo = {
     imageAlt: 'A screenshot of my Color Changer project.',
     collaborators: 'This project was completed independently.',
     githubLink: 'https://github.com/kccrs/color-changer',
-    projectWebsite: '',
+    projectWebsite: 'https://kccrs.github.io/color-changer/',
     tools: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Git']
-    // choiceButton: {
-    //                 visible: 'visible',
-    //                 text: 'Yes!',
-    //                 result: 'page2'
-    //               },
   },
   ideaBox: {
     projectTitle: 'IdeaBox',
@@ -27,11 +22,6 @@ const projectInfo = {
     githubLink: 'https://github.com/kccrs/ideabox',
     projectWebsite: '',
     tools: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'localStorage', 'Git']
-    // choiceButton: {
-    //                 visible: 'visible',
-    //                 text: 'Yes!',
-    //                 result: 'page2'
-    //               },
   },
   snakePlane: {
     projectTitle: 'Snake on a Plane',
@@ -44,11 +34,6 @@ const projectInfo = {
     githubLink: 'https://github.com/kccrs/Snakes',
     projectWebsite: 'https://kccrs.github.io/Snakes',
     tools: ['HTML5', 'HTML5 Canvas', 'CSS3', 'JavaScript', 'O.O.P.', 'Git']
-    // choiceButton: {
-    //                 visible: 'visible',
-    //                 text: 'Yes!',
-    //                 result: 'page2'
-    //               },
   },
   pomodoro: {
     projectTitle: 'Pomodoro Timer',
@@ -61,11 +46,6 @@ const projectInfo = {
     githubLink: 'https://github.com/kccrs/pomodoro-app',
     projectWebsite: '',
     tools: ['HTML5', 'Sass/SCSS', 'JavaScript', 'jQuery', 'localStorage', 'Git', 'TDD']
-    // choiceButton: {
-    //                 visible: 'visible',
-    //                 text: 'Yes!',
-    //                 result: 'page2'
-    //               },
   },
   fontPair: {
     projectTitle: 'Font Pairing',
@@ -76,13 +56,8 @@ const projectInfo = {
     imageAlt: 'A screenshot of my Font Pairing project.',
     collaborators: 'This project was completed independently.',
     githubLink: 'https://github.com/kccrs/six-weeks-of-fonts',
-    projectWebsite: '',
+    projectWebsite: 'https://kccrs.github.io/six-weeks-of-fonts/',
     tools: ['HTML5', 'Sass/SCSS', 'JavaScript', 'jQuery', 'Git']
-    // choiceButton: {
-    //                 visible: 'visible',
-    //                 text: 'Yes!',
-    //                 result: 'page2'
-    //               },
   },
   shootBreeze: {
     projectTitle: 'Shoot the Breeze',
@@ -95,11 +70,6 @@ const projectInfo = {
     githubLink: 'https://github.com/kccrs/shoot-the-breeze',
     projectWebsite: 'https://shoot-the-breeze-9f4d8.firebaseapp.com/',
     tools: ['HTML5', 'Sass/SCSS', 'JavaScript', 'React', 'Firebase', 'Git']
-    // choiceButton: {
-    //                 visible: 'visible',
-    //                 text: 'Yes!',
-    //                 result: 'page2'
-    //               },
   },
   globot: {
     projectTitle: 'GloBot',
@@ -112,11 +82,6 @@ const projectInfo = {
     githubLink: 'https://github.com/kccrs/globot',
     projectWebsite: '',
     tools: ['HTML5', 'Sass/SCSS', 'CSS Animations', 'JavaScript', 'React', 'React Router', 'Git', 'Text to Speech API']
-    // choiceButton: {
-    //                 visible: 'visible',
-    //                 text: 'Yes!',
-    //                 result: 'page2'
-    //               },
   }
 };
 
