@@ -33992,10 +33992,10 @@
 	        null,
 	        _react2.default.createElement(
 	          'nav',
-	          { className: 'nav-links' },
+	          null,
 	          _react2.default.createElement(
 	            'ul',
-	            null,
+	            { className: 'nav-links' },
 	            _react2.default.createElement(
 	              'li',
 	              null,
@@ -34036,16 +34036,21 @@
 	        ),
 	        _react2.default.createElement(
 	          'section',
-	          null,
+	          { className: 'logo' },
 	          _react2.default.createElement(
 	            'h1',
-	            null,
+	            { className: 'my-name' },
 	            'Casey Cross'
 	          ),
 	          _react2.default.createElement(
 	            'h2',
-	            null,
+	            { className: 'my-title' },
 	            'Front End Developer'
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            { className: 'copyright' },
+	            '\xA9 2016 Casey Cross'
 	          )
 	        )
 	      );
@@ -34144,10 +34149,10 @@
 
 	exports = module.exports = __webpack_require__(526)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Cagliostro|Macondo|Simonetta|Montserrat|Montserrat+Alternates);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Cagliostro|Macondo|Simonetta|Montserrat|Raleway:100,200,300|Montserrat+Alternates);", ""]);
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  /* Hides the slider so that custom slider can be made */\n  width: 100%;\n  /* Specific width is required for Firefox. */\n  background: transparent;\n  /* Otherwise white in Chrome */ }\n\ninput[type=range]::-webkit-slider-thumb {\n  -webkit-appearance: none; }\n\ninput[type=range]:focus {\n  outline: none;\n  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }\n\ninput[type=range]::-ms-track {\n  width: 100%;\n  cursor: pointer;\n  /* Hides the slider so custom styles can be added */\n  background: transparent;\n  border-color: transparent;\n  color: transparent; }\n\nhtml {\n  height: 100%;\n  min-width: 100%; }\n  html *, html *:before, html *:after {\n    -moz-box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box; }\n\n*, *:before, *:after {\n  box-sizing: inherit; }\n\n.NotFound {\n  height: 100vh; }\n\n.error {\n  font-size: 40px;\n  margin-top: 20%;\n  text-align: center; }\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  /* Hides the slider so that custom slider can be made */\n  width: 100%;\n  /* Specific width is required for Firefox. */\n  background: transparent;\n  /* Otherwise white in Chrome */ }\n\ninput[type=range]::-webkit-slider-thumb {\n  -webkit-appearance: none; }\n\ninput[type=range]:focus {\n  outline: none;\n  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }\n\ninput[type=range]::-ms-track {\n  width: 100%;\n  cursor: pointer;\n  /* Hides the slider so custom styles can be added */\n  background: transparent;\n  border-color: transparent;\n  color: transparent; }\n\nhtml {\n  color: #18216A;\n  height: 100%;\n  min-width: 100%; }\n  html *, html *:before, html *:after {\n    -moz-box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box; }\n\n*, *:before, *:after {\n  box-sizing: inherit; }\n\nheader {\n  height: 100vh;\n  max-width: 30%;\n  padding-right: 10px;\n  text-align: right; }\n\nnav {\n  font-size: 2.5rem;\n  font-family: \"Raleway\", sans-serif;\n  height: 65vh; }\n\n.nav-links {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  height: 100%; }\n\na {\n  text-decoration: none;\n  color: #18216A; }\n\n.logo {\n  height: 35vh;\n  padding-top: 20%; }\n\n.my-name {\n  font-size: 3.125rem;\n  font-family: \"Macondo\", serif; }\n\n.my-title {\n  font-size: 1.25rem;\n  font-family: \"Raleway\", sans-serif;\n  font-weight: 300;\n  margin-top: 20px; }\n\n.copyright {\n  font-size: 0.625rem;\n  font-family: \"Raleway\", sans-serif;\n  font-weight: 300;\n  margin-top: 30px; }\n\n.NotFound {\n  height: 100vh; }\n\n.error {\n  font-size: 40px;\n  margin-top: 20%;\n  text-align: center; }\n", ""]);
 
 	// exports
 
