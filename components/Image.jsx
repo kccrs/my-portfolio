@@ -3,12 +3,16 @@ import projectInfo from '../content/projectInfo';
 
 export default class Image extends Component {
   render () {
-    let projectId = this.props.key;
+    let projectName = this.props.textKey;
 
     return (
       <img
-        src={projectInfo[projectId].imageSrc} className={projectInfo[projectId].imageClassName} alt={projectInfo[projectId].imageAlt}
+        src={projectInfo[projectName].imageSrc} className={projectInfo[projectName].imageClassName} alt={projectInfo[projectName].imageAlt}
       />
     );
   }
 }
+
+// Image.contextTypes = {
+//   router: React.PropTypes.object
+// }

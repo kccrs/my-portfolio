@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
+import Image from './Image';
 
 import projectInfo from '../content/projectInfo';
 
-
 export default class Project extends Component {
 
-  goToProject(e, nextProject) {
-    e.preventDefault();
-    this.context.router.transitionTo(`/projects/${nextProject}`);
-  }
+  
 
-  returnHome (e) {
-    e.preventDefault();
-    this.context.router.transitionTo('/');
-  }
+  // returnHome (e) {
+  //   e.preventDefault();
+  //   this.context.router.transitionTo('/');
+  // }
 
   render () {
-    let currentProject = this.props.params.projectId;
-    let thisProject = projectInfo[currentProject];
+    let currentProject = this.props.params.projectName;
+
+    // let thisProject = projectInfo[currentProject];
 
     let projectClass = classnames('single-project', currentProject);
 
@@ -33,7 +31,7 @@ export default class Project extends Component {
           {thisProject.aboutProject}
         </p>
         // image
-        <Image key={currentProject} />
+        <Image textKey={currentProject} />
         // collaborators
         <p className="collaborators">
           {thisProject.collaborators}
@@ -53,7 +51,9 @@ export default class Project extends Component {
         </p>
         // tools
         <ul className="tools">
-          
+          {thisProject.tools.map(t =>
+            <li className="tool">{t.value}</li>
+          )}
         </ul>
       </article>
     );
