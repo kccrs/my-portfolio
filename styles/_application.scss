@@ -12,8 +12,13 @@ html {
   justify-content: space-between;
   height: 75vh;
   overflow: hidden;
+  @include breakpoint($small) {
+    height: 80vh;
+  }
+  @include breakpoint($medium) {
+    height: 100vh;
+  }
 }
-
 
 .content-box {
   font-family: $font-raleway;
@@ -23,6 +28,10 @@ html {
   letter-spacing: .2em;
   height: 30%;
   text-align: center;
+  @include breakpoint($small) {
+    margin: auto;
+    width: 80%;
+  }
 }
 
 .about-box {

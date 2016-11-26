@@ -27,6 +27,7 @@ export default class App extends Component {
             <Link to="/code">CONTACT</Link>
           </p>
         </section>
+        <h3 className="copyright copyright-bottom">&copy; 2016 Casey Cross</h3>
       </div>
     );
   }
