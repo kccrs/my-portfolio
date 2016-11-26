@@ -12,10 +12,16 @@ html {
   justify-content: space-between;
   height: 75vh;
   overflow: hidden;
+  @include breakpoint($small) {
+    height: 80vh;
+  }
+  @include breakpoint($medium) {
+    height: 100vh;
+  }
 }
 
-
 .content-box {
+  @include font-size(30px);
   font-family: $font-raleway;
   display: flex;
   flex-direction: column;
@@ -23,6 +29,16 @@ html {
   letter-spacing: .2em;
   height: 30%;
   text-align: center;
+  @include breakpoint($small) {
+    margin: auto;
+    width: 90%;
+  }
+  @include breakpoint($medium) {
+    margin: 0 auto;
+  }
+  @include breakpoint($extra-large) {
+    width: 85%;
+  }
 }
 
 .about-box {
