@@ -21,7 +21,8 @@ nav {
   font-family: $font-raleway;
   margin: 20px 0 30px 0;
     @include breakpoint($small) {
-      padding-top: 15px;
+      margin: 0;
+      padding-top: 5px;
       width: 45%;
     }
     @include breakpoint($medium) {
@@ -67,17 +68,26 @@ nav {
   @include breakpoint($medium) {
     margin-top: 2em;
   }
+  @include breakpoint($extra-large) {
+    @include font-size(50px);
+  }
 }
 
 .my-title {
-  @include font-size(20px);
+  @include font-size(15px);
   font-family: $font-raleway;
   font-weight: 100;
   display: none;
   text-align: center;
-  @include breakpoint($medium) {
+  @include breakpoint($small) {
     display: block;
     margin-top: .5em;
+  }
+  @include breakpoint($medium) {
+    @include font-size(20px);
+  }
+  @include breakpoint($extra-large) {
+    @include font-size(30px);
   }
 }
 
@@ -96,6 +106,7 @@ nav {
 }
 
 .copyright-bottom {
+  @include font-size(10px);
   padding-bottom: 5px;
   text-align: center;
   @include breakpoint($medium) {

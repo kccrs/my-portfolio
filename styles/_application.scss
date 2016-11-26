@@ -21,6 +21,7 @@ html {
 }
 
 .content-box {
+  @include font-size(30px);
   font-family: $font-raleway;
   display: flex;
   flex-direction: column;
@@ -30,7 +31,13 @@ html {
   text-align: center;
   @include breakpoint($small) {
     margin: auto;
-    width: 80%;
+    width: 90%;
+  }
+  @include breakpoint($medium) {
+    margin: 0 auto;
+  }
+  @include breakpoint($extra-large) {
+    width: 85%;
   }
 }
 
