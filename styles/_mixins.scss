@@ -8,7 +8,10 @@
 }
 
 @mixin background-image($url) {
-  background: no-repeat url($url) center center fixed;
+  background:
+              url($url)
+              center
+              center;
 }
 
 // Media Queries

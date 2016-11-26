@@ -2,18 +2,11 @@ header {
   display: flex;
   flex-direction: column-reverse;
   height: 25vh;
-  // width: 35%;
-  // float: left;
-  // border: 1px solid green;
-  // padding: 0 20px;
   text-align: center;
 }
 
 nav {
-  // @include font-size(40px);
   font-family: $font-raleway;
-  // height: 65vh;
-  // border: 1px solid black;
   margin: 20px 0 30px 0;
 }
 
@@ -21,27 +14,20 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  // height: 100%;
-  // border: 1px solid green;
 }
 
 .nav-links a {
   color: black;
   text-decoration: none;
-  // border: 1px solid purple;
 
 }
 
 .logo {
-  // padding-top: 20%;
-  // border: 1px solid darkblue;
 }
 
 .my-name {
   @include font-size(40px);
   font-family: $font-main;
-  // text-transform: uppercase;
-  // margin-bottom: 25px;
   a {
     color: black;
     text-decoration: none;
@@ -53,16 +39,11 @@ nav {
   font-family: $font-raleway;
   font-weight: 100;
   display: none;
-  // margin-top: 20px;
-  // border: 1px solid turquoise;
 
 }
 
 .copyright {
   display: none;
-  // @include font-size(10px);
   font-family: $font-raleway;
   font-weight: 300;
-  // border: 1px solid magenta;
-  // margin-top: 30px;
 }

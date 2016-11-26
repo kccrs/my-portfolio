@@ -1,8 +1,5 @@
 html {
   @include global-box-sizing(border-box);
-  // color: black;
-  // height: 100%;
-  // min-width: 100%;
 }
 
 *, *:before, *:after {
@@ -13,9 +10,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // float: right;
   height: 75vh;
-  // width: 65%;
   overflow: hidden;
 }
 
@@ -28,7 +23,6 @@ html {
   letter-spacing: .2em;
   height: 30%;
   text-align: center;
-  // margin-bottom: 20px;
 }
 
 .about-box {
@@ -37,8 +31,6 @@ html {
 
 .contact-box {
   @include background-image("/content/images/pink-sky.jpg");
-  // height: %;
-  // margin-top: 30px;
 }
 
 .projects-box {
