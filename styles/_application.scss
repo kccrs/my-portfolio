@@ -1,6 +1,6 @@
 html {
   @include global-box-sizing(border-box);
-  color: black;
+  // color: black;
   // height: 100%;
   // min-width: 100%;
 }
@@ -10,32 +10,42 @@ html {
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   // float: right;
   height: 75vh;
   // width: 65%;
-  border: 1px solid red;
+  overflow: hidden;
 }
 
-// @keyframes slide-in {
-//   0%  {
-//     left: -100%;
-//     width: 300%;
-//   }
-//   100% {
-//     left: 0%;
-//     width: 100%;
-//   }
-// }
-//
-// @keyframes slide-out {
-//   0% {
-//     margin-right: 100%;
-//     width: 100%;
-//   }
-//
-//   100% {
-//     margin-right: 0%;
-//     width: 300%;
-//   }
-// }
-//
+
+.content-box {
+  font-family: $font-raleway;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: .2em;
+  height: 30%;
+  text-align: center;
+  // margin-bottom: 20px;
+}
+
+.about-box {
+  @include background-image("/content/images/toronto.jpg");
+}
+
+.contact-box {
+  @include background-image("/content/images/pink-sky.jpg");
+  // height: %;
+  // margin-top: 30px;
+}
+
+.projects-box {
+  @include background-image("/content/images/london-pattern.jpeg")
+}
+
+.box-title a {
+  color: white;
+  text-decoration: none;
+}

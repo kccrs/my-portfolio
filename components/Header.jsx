@@ -8,9 +8,9 @@ export default class Header extends Component {
       <header>
         <nav>
           <ul className="nav-links">
-            <li><Link to="/code">Code</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/About">ABOUT</Link></li>
+            <li><Link to="/Code">CODE</Link></li>
+            <li><Link to="/Contact">CONTACT</Link></li>
           </ul>
         </nav>
         <section className="logo">

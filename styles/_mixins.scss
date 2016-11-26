@@ -7,6 +7,10 @@
   font-size: calculateRem($size);
 }
 
+@mixin background-image($url) {
+  background: no-repeat url($url) center center fixed;
+}
+
 // Media Queries
 
 $small: 400px;
