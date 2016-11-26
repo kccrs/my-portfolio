@@ -15,7 +15,7 @@ import Project from './components/Project';
 const Root = () =>  {
   return (
     <BrowserRouter>
-      <div>
+      <div className="full-container">
         <Header />
         <Match exactly pattern="/" component={App} />
         <Match exactly pattern="/code" component={Code} />
