@@ -1,20 +1,43 @@
-// .Contact {
-//   @include background-image("/content/images/pink-sky.jpg");
-//   // height: %;
-//   // margin-top: 30px;
-// }
-//
-// .contact-blurb {
-//   @include font-size(20px);
-//   font-family: $font-raleway;
-//   line-height: 1.2em;
-//   padding: 20px;
-// }
-//
-// .contact-list {
-//   display: flex;
-// }
-//
-// .social-media-icon {
-//
-// }
+.Contact {
+  @include background-image("/content/images/pink-sky.jpg");
+  height: 75vh;
+  @include breakpoint($medium) {
+    height: 100vh;
+    float: right;
+    width: 65vw;
+  }
+  @include breakpoint($large) {
+    background-size: cover;
+  }
+}
+
+.contact-blurb {
+  @include font-size(30px);
+  font-family: $font-raleway;
+  line-height: 1.4em;
+  letter-spacing: .06em;
+  padding: 20% 10%;
+  text-align: center;
+  @include breakpoint($medium) {
+    @include font-size(40px);
+    font-weight: bold;
+    margin-top: 20%;
+  }
+}
+
+.contact-list {
+  display: flex;
+  margin: 20px 10px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.social-media-icon img {
+  background-color: transparentize(black, .5);
+  height: 50px;
+  width: 50px;
+  @include breakpoint($extra-large) {
+    height: 75px;
+    width: 75px;
+  }
+}

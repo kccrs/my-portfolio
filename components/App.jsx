@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Hero from './Hero';
-import Project from './Project';
-import Code from './Code';
-import Contact from './Contact';
+// import Project from './Project';
+// import Code from './Code';
+// import Contact from './Contact';
 import { Link } from 'react-router';
 
 

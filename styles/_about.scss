@@ -89,9 +89,18 @@ h5 {
 }
 
 .resume-link {
-  color: $color-one;
+  @include font-size(16px);
   font-weight: bold;
   margin-bottom: 20px;
-  text-decoration: none;
   text-align: center;
+}
+
+.resume-link::before {
+  color: $color-three;
+  content: "→  ";
+}
+
+.resume-link::after {
+  color: $color-three;
+  content: "  ←";
 }
