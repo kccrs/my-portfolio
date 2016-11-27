@@ -4,7 +4,6 @@ export default class Contact extends Component {
   render () {
     return (
       <div className="Contact">
-        
         <h2 className="contact-blurb">Feel free to contact me for future nerd adventures and opportunities!</h2>
         <ul className="contact-list">
           <li className="social-media-icon">

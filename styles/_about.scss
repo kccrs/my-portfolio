@@ -7,14 +7,16 @@
     letter-spacing: .06em;
   }
   @include breakpoint($medium) {
-    padding-left: 20px;
+    padding-left: 30px;
   }
   @include breakpoint($large) {
+    padding-left: 40px;
     margin: 0 5%;
   }
 }
 
 .about-section-title {
+  @include background-image("/content/images/toronto.jpg");
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -25,12 +27,11 @@
   @include font-size(20px);
   margin-bottom: 20px;
   @include breakpoint($large) {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
-.my-education .flex-content,
-.my-experience .flex-content {
+.flex-content {
   @include breakpoint($medium) {
     display: flex;
   }
@@ -78,9 +79,9 @@ h5 {
   }
 }
 
-.history-content::after {
+.three::after {
   display: block;
-  background-color: white;
+  margin-top: 5px;
   text-align: center;
   content: "▽";
   @include breakpoint($medium) {
@@ -96,11 +97,11 @@ h5 {
 }
 
 .resume-link::before {
-  color: $color-three;
+  color: $color-two;
   content: "→  ";
 }
 
 .resume-link::after {
-  color: $color-three;
+  color: $color-two;
   content: "  ←";
 }

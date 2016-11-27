@@ -12,7 +12,7 @@
 }
 
 .contact-blurb {
-  @include font-size(30px);
+  @include font-size(28px);
   font-family: $font-raleway;
   line-height: 1.4em;
   letter-spacing: .06em;
@@ -20,8 +20,7 @@
   text-align: center;
   @include breakpoint($medium) {
     @include font-size(40px);
-    font-weight: bold;
-    margin-top: 20%;
+    margin-top: 10%;
   }
 }
 

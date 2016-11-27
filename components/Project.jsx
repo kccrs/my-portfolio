@@ -6,55 +6,38 @@ import projectInfo from '../content/projectInfo';
 
 export default class Project extends Component {
 
-  
-
-  // returnHome (e) {
-  //   e.preventDefault();
-  //   this.context.router.transitionTo('/');
-  // }
-
   render () {
-    let currentProject = this.props.params.projectName;
+    let projectName = this.props.textKey;
 
-    // let thisProject = projectInfo[currentProject];
-
-    let projectClass = classnames('single-project', currentProject);
+    // let currentProject = this.props.params.projectName;
+    //
+    // let projectName = projectInfo[currentProject];
+    //
+    // let projectClass = classnames('single-project', currentProject);
 
     return (
-      <article className={projectClass}>
-        // project title
-        <h3 className="project-title">
-          {thisProject.projectTitle}
-        </h3>
-        // project description
+      <article>
+        <h6 className="project-title">
+          {projectInfo[projectName].projectTitle}
+        </h6>
         <p className="project-description">
-          {thisProject.aboutProject}
+          {projectInfo[projectName].aboutProject}
         </p>
-        // image
-        <Image textKey={currentProject} />
-        // collaborators
         <p className="collaborators">
-          {thisProject.collaborators}
+          {projectInfo[projectName].collaborators}
         </p>
-        // website urls
         <p className="github">
-          Go to the project on
-          <a href={thisProject.githubLink}>
-            GitHub
-          </a>
+          View the project code on GitHub <span className="link github-link">
+          <a href={projectInfo[projectName].githubLink}>
+            here.
+          </a></span>
         </p>
         <p className="website">
-          Visit the project site
-          <a href={thisProject.projectWebsite}>
-            here.
-          </a>
+          Visit the project site <span className="link website-link">
+          <a href={projectInfo[projectName].projectWebsite}>
+             here.
+          </a></span>
         </p>
-        // tools
-        <ul className="tools">
-          {thisProject.tools.map(t =>
-            <li className="tool">{t.value}</li>
-          )}
-        </ul>
       </article>
     );
   }
@@ -64,4 +47,12 @@ Project.contextTypes = {
   router: React.PropTypes.object
 };
 
-// let currentProject = this.props.params.pageId;
+// <Image textKey={projectName} />
+
+
+// <ul className="tools">
+//   {projectInfo[projectName].tools.map(t =>
+//     <li className="tool">{t.value}</li>
+//   )}
+// </ul>
+// image
