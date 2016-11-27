@@ -1,15 +1,15 @@
 const projectInfo = {
-  colorChanger: {
-    projectTitle: 'Color Changer',
+  weatherTracker: {
+    projectTitle: 'Weather Tracker',
     aboutProject:
-                  'This is a fun little program, especially if you really respond to colors like I do.  It reminds me of a remarkable exhibit called Mood Lighting I experienced at the <a href="http://www.exploratorium.edu/"> Exploratorium</a> in San Francisco.  You place your head inside a large sphere that illuminates with varying colors which you can manually adjust.  It was a unique immersive experience that invoked strong emotional reactions. You can check that out <a href="http://www.exploratorium.edu/mind/about/more_exhibits.html">here.</a>',
-    imageSrc: '../content/images/color-changer.png',
-    imageClassName: 'project-image color-changer',
-    imageAlt: 'A screenshot of my Color Changer project.',
-    collaborators: 'This project was completed independently.',
-    githubLink: 'https://github.com/kccrs/color-changer',
-    projectWebsite: 'https://kccrs.github.io/color-changer/',
-    tools: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Git']
+                  'This project pulls data from a weather API and allows the user to check their local weather forecast as well as pinning other cities to their dashboard to compare weather.',
+    imageSrc: '../content/images/weather-tracker.png',
+    imageClassName: 'project-image weather-tracker',
+    imageAlt: 'A screenshot of my Weather Tracker project.',
+    collaborators: 'This project was a collaboration between myself, Brett Hevia, Kyle Misencik, and Mike Sausa.',
+    githubLink: 'https://github.com/kccrs/weather-forecast',
+    projectWebsite: 'https://kccrs.github.io/weather-forecast/',
+    tools: ['HTML5', 'Sass/CSS3', 'React', 'React-Router', 'Redux']
   },
   ideaBox: {
     projectTitle: 'IdeaBox',

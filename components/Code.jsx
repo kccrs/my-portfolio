@@ -1,30 +1,29 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import classnames from 'classnames';
-// import projectInfo from '../content/projectInfo';
+
 import Project from './Project';
+import Image from './Image';
+import MoreCode from './MoreCode';
 
 export default class Code extends Component {
 
-  goToProject(e) {
-    e.preventDefault();
-    this.context.router.transitionTo(`/${projectName}`);
-  }
-
   render () {
-    // let projectName = this.props.textKey;
-    // let currentProject = this.props.params.projectName;
-
-    // let pageClass = classnames('single-project', currentProject);
-
-
     return (
-      <div>
-        <p>This seems to be rendering</p>
-        <Link to="/code/snakePlane">
-          <Project className="snakePlane" textKey="snakePlane"/>
-        </Link>
-      </div>
+      <section className="Code">
+        <article className="project-container">
+          <Image textKey="shootBreeze" />
+          <Project textKey="shootBreeze"/>
+        </article>
+        <article className="project-container">
+          <Image textKey="globot" />
+          <Project textKey="globot"/>
+        </article>
+        <article className="project-container">
+          <Image textKey="pomodoro" />
+          <Project textKey="pomodoro"/>
+        </article>
+        <Link to="/morecode">Click here to see more projects.</Link>
+      </section>
     );
   }
 }

@@ -9,8 +9,8 @@ import App from './components/App';
 import Code from './components/Code';
 import Contact from './components/Contact';
 import Header from './components/Header';
+import MoreCode from './components/MoreCode';
 import NotFound from './components/NotFound';
-import Project from './components/Project';
 
 const Root = () =>  {
   return (
@@ -19,7 +19,7 @@ const Root = () =>  {
         <Header />
         <Match exactly pattern="/" component={App} />
         <Match exactly pattern="/code" component={Code} />
-        <Match pattern="/code/:projectName" component={Project} />
+        <Match exactly pattern="/morecode" component={MoreCode} />
         <Match exactly pattern="/about" component={About} />
         <Match exactly pattern="/contact" component={Contact} />
         <Miss component={NotFound} />
