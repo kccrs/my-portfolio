@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
-import classnames from 'classnames';
-import Image from './Image';
 
 import projectInfo from '../content/projectInfo';
 
 export default class Project extends Component {
-
   render () {
     let projectName = this.props.textKey;
 
-    // let currentProject = this.props.params.projectName;
-    //
-    // let projectName = projectInfo[currentProject];
-    //
-    // let projectClass = classnames('single-project', currentProject);
-
     return (
-      <article>
+      <article className="single-project">
         <h6 className="project-title">
           {projectInfo[projectName].projectTitle}
         </h6>
@@ -26,17 +17,18 @@ export default class Project extends Component {
         <p className="collaborators">
           {projectInfo[projectName].collaborators}
         </p>
+        <p className="tools">
+          <span className="tool-span">Tools used for this project: </span><br/> {projectInfo[projectName].tools}
+        </p>
         <p className="github">
-          View the project code on GitHub <span className="link github-link">
-          <a href={projectInfo[projectName].githubLink}>
-            here.
-          </a></span>
+          <a href={projectInfo[projectName].githubLink} className="weblink">
+            View the project code on GitHub here.
+          </a>
         </p>
         <p className="website">
-          Visit the project site <span className="link website-link">
-          <a href={projectInfo[projectName].projectWebsite}>
-             here.
-          </a></span>
+          <a href={projectInfo[projectName].projectWebsite} className="weblink">
+            Visit the project site here.
+          </a>
         </p>
       </article>
     );
@@ -46,13 +38,3 @@ export default class Project extends Component {
 Project.contextTypes = {
   router: React.PropTypes.object
 };
-
-// <Image textKey={projectName} />
-
-
-// <ul className="tools">
-//   {projectInfo[projectName].tools.map(t =>
-//     <li className="tool">{t.value}</li>
-//   )}
-// </ul>
-// image

@@ -1,8 +1,22 @@
 .project-container {
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .project-image {
-  // max-height: 200px;
-  max-width: 200px;
+  max-width: 100%;
+}
+
+.morecode-link {
+  @include font-size(18px);
+  color: $color-two;
+  font-family: $font-raleway;
+  margin: 20px 0;
+  text-align: center;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
 }
