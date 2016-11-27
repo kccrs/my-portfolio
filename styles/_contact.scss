@@ -1,14 +1,28 @@
 .Contact {
   @include background-image("/content/images/pink-sky.jpg");
   height: 75vh;
+  @include breakpoint($medium) {
+    height: 100vh;
+    float: right;
+    width: 65vw;
+  }
+  @include breakpoint($large) {
+    background-size: cover;
+  }
 }
 
 .contact-blurb {
-  @include font-size(24px);
+  @include font-size(30px);
   font-family: $font-raleway;
   line-height: 1.4em;
+  letter-spacing: .06em;
   padding: 20% 10%;
   text-align: center;
+  @include breakpoint($medium) {
+    @include font-size(40px);
+    font-weight: bold;
+    margin-top: 20%;
+  }
 }
 
 .contact-list {
@@ -19,7 +33,11 @@
 }
 
 .social-media-icon img {
-  background-color: saturate($color-two, 15);
+  background-color: transparentize(black, .5);
   height: 50px;
   width: 50px;
+  @include breakpoint($extra-large) {
+    height: 75px;
+    width: 75px;
+  }
 }
