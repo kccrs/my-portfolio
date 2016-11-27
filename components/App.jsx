@@ -13,17 +13,17 @@ export default class App extends Component {
       <div className="App">
 
         <section className="about-box content-box">
-          <p className="box-title box-title-about">
+          <p className="box-title">
             <Link to="/code">ABOUT ME</Link>
           </p>
         </section>
         <section className="projects-box content-box">
-          <p className="box-title box-title-projects">
+          <p className="box-title">
             <Link to="/code">CODE</Link>
           </p>
         </section>
         <section className="contact-box content-box">
-          <p className="box-title box-title-contact">
+          <p className="box-title">
             <Link to="/code">CONTACT</Link>
           </p>
         </section>

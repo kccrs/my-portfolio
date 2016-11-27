@@ -1,0 +1,62 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-raleway;
+  letter-spacing: .03em;
+}
+
+.about-section-title {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.history-content {
+  @include font-size(20px);
+  margin-bottom: 10px;
+}
+
+.history-content article {
+  // @include font-size(18px);
+  line-height: 1.25em;
+  // margin-bottom: 10px;
+  padding: 10px;
+}
+
+.about-me {
+  @include color-gradient($color-three);
+}
+
+.my-education {
+  @include color-gradient($color-two);
+}
+
+.my-experience {
+  @include color-gradient($color-one);
+}
+
+h3, h4, h5 {
+  text-align: right;
+}
+
+h3 {
+  @include font-size(20px);
+  font-weight: bold;
+}
+
+h4 {
+  @include font-size(17px);
+}
+
+h5 {
+  @include font-size(14px);
+}
+
+.resume-link {
+  color: $color-three;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+}
