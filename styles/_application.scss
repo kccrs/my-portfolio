@@ -6,6 +6,11 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -55,5 +60,4 @@ html {
 
 .box-title a {
   color: white;
-  text-decoration: none;
 }
