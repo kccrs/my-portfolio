@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 export default class Header extends Component {
-
   render() {
     return (
       <header>
         <nav>
           <ul className="nav-links">
+            <li><Link to="/">HOME</Link></li>
             <li><Link to="/about">ABOUT</Link></li>
             <li><Link to="/code">CODE</Link></li>
             <li><Link to="/contact">CONTACT</Link></li>

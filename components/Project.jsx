@@ -1,57 +1,43 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import Image from './Image';
+// import Image from './Image';
 
 import projectInfo from '../content/projectInfo';
 
 export default class Project extends Component {
-  // returnHome (e) {
-  //   e.preventDefault();
-  //   this.context.router.transitionTo('/');
-  // }
 
   render () {
-    let currentProject = this.props.params.projectName;
+    let projectName = this.props.textKey;
 
-    // let thisProject = projectInfo[currentProject];
-
-    let projectClass = classnames('single-project', currentProject);
+    // let currentProject = this.props.params.projectName;
+    //
+    // let projectName = projectInfo[currentProject];
+    //
+    // let projectClass = classnames('single-project', currentProject);
 
     return (
-      <article className={projectClass}>
-        // project title
+      <article>
         <h3 className="project-title">
-          {thisProject.projectTitle}
+          {projectInfo[projectName].projectTitle}
         </h3>
-        // project description
         <p className="project-description">
-          {thisProject.aboutProject}
+          {projectName.aboutProject}
         </p>
-        // image
-        <Image textKey={currentProject} />
-        // collaborators
         <p className="collaborators">
-          {thisProject.collaborators}
+          {projectName.collaborators}
         </p>
-        // website urls
         <p className="github">
           Go to the project on
-          <a href={thisProject.githubLink}>
+          <a href={projectName.githubLink}>
             GitHub
           </a>
         </p>
         <p className="website">
           Visit the project site
-          <a href={thisProject.projectWebsite}>
-            here.
+          <a href={projectName.projectWebsite}>
+             here.
           </a>
         </p>
-        // tools
-        <ul className="tools">
-          {thisProject.tools.map(t =>
-            <li className="tool">{t.value}</li>
-          )}
-        </ul>
       </article>
     );
   }
@@ -61,4 +47,11 @@ Project.contextTypes = {
   router: React.PropTypes.object
 };
 
-// let currentProject = this.props.params.pageId;
+
+// <ul className="tools">
+//   {projectName.tools.map(t =>
+//     <li className="tool">{t.value}</li>
+//   )}
+// </ul>
+// image
+// <Image textKey={currentProject} />
