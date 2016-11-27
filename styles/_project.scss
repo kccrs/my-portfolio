@@ -1,14 +1,18 @@
 .single-project {
   font-family: $font-raleway;
-  margin: 10px 0;
+  // margin: 10px 0;
 }
 
 .project-title {
-  @include font-size(20px);
+  @include font-size(22px);
   color: $color-three;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 5%;
+  @include breakpoint($small) {
+    @include font-size(30px);
+    // margin: 20px 0;
+  }
 }
 
 .project-description,
@@ -16,19 +20,27 @@
 .tools,
 .github,
 .website {
-  @include font-size(18px);
+  @include font-size(20px);
   line-height: 1.35em;
-  padding: 5px 20px;
+  padding: 3% 7%;
+  @include breakpoint($small) {
+    @include font-size(24px);
+    // margin: 10px 30px;
+  }
 }
 
 .weblink {
+  color: $color-two;
   font-weight: bold;
-}
-
-.weblink:hover {
-  color: purple;
+  &:hover {
+    @include font-size(21px);
+    @include breakpoint($small) {
+      @include font-size(25px);
+    }
+  }
 }
 
 .tool-span {
+  color: $color-three;
   font-weight: bold;
 }

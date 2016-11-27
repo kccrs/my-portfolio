@@ -10,6 +10,7 @@ export default class Code extends Component {
   render () {
     return (
       <section className="Code">
+        <hr />
         <article className="project-container">
           <Image textKey="shootBreeze" />
           <Project textKey="shootBreeze"/>

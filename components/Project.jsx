@@ -22,7 +22,7 @@ export default class Project extends Component {
         </p>
         <p className="github">
           <a href={projectInfo[projectName].githubLink} className="weblink">
-            View the project code on GitHub here.
+            View the code on GitHub here.
           </a>
         </p>
         <p className="website">
