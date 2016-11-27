@@ -29,11 +29,6 @@
 
 // Media Queries
 
-$small: 480px;
-$medium: 780px;
-$large: 900px;
-$extra-large: 1000px;
-
 @mixin breakpoint($bp) {
   @media screen and (min-width: $bp) {
     @content;
