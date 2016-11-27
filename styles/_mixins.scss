@@ -14,12 +14,20 @@
               center;
 }
 
-// Media Queries
+@mixin color-gradient($color) {
+  background-color: $color;
+  .one {
+    background-color: lighten($color, 10);
+  }
+  .two {
+    background-color: lighten($color, 30);
+  }
+  .three {
+    background-color: lighten($color, 40);
+  }
+}
 
-$small: 480px;
-$medium: 780px;
-$large: 900px;
-$extra-large: 1000px;
+// Media Queries
 
 @mixin breakpoint($bp) {
   @media screen and (min-width: $bp) {

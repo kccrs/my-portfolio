@@ -1,0 +1,97 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-raleway;
+  letter-spacing: .03em;
+  @include breakpoint($small) {
+    letter-spacing: .06em;
+  }
+  @include breakpoint($medium) {
+    padding-left: 20px;
+  }
+  @include breakpoint($large) {
+    margin: 0 5%;
+  }
+}
+
+.about-section-title {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.history-content {
+  @include font-size(20px);
+  margin-bottom: 20px;
+  @include breakpoint($large) {
+    margin-top: 40px;
+  }
+}
+
+.my-education .flex-content,
+.my-experience .flex-content {
+  @include breakpoint($medium) {
+    display: flex;
+  }
+}
+
+.history-content article {
+  line-height: 1.25em;
+  padding: 10px;
+  min-width: 33%;
+  @include breakpoint($small) {
+    padding: 10px 20px;
+  }
+}
+
+.about-me {
+  @include color-gradient($color-one);
+}
+
+.my-education {
+  @include color-gradient($color-two);
+}
+
+.my-experience {
+  @include color-gradient($color-three);
+}
+
+h3, h4, h5 {
+  text-align: right;
+}
+
+h3 {
+  @include font-size(20px);
+  font-weight: bold;
+}
+
+h4 {
+  @include font-size(17px);
+  margin-top: 1em;
+}
+
+h5 {
+  @include font-size(14px);
+  @include breakpoint($medium) {
+    margin-top: 10px;
+  }
+}
+
+.history-content::after {
+  display: block;
+  background-color: white;
+  text-align: center;
+  content: "▽";
+  @include breakpoint($medium) {
+    display: none;
+  }
+}
+
+.resume-link {
+  color: $color-one;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+}
