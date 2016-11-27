@@ -5,9 +5,6 @@ import Image from './Image';
 import projectInfo from '../content/projectInfo';
 
 export default class Project extends Component {
-
-  
-
   // returnHome (e) {
   //   e.preventDefault();
   //   this.context.router.transitionTo('/');
