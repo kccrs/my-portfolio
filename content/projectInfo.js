@@ -38,7 +38,7 @@ const projectInfo = {
   pomodoro: {
     projectTitle: 'Pomodoro Timer',
     aboutProject:
-                  'This is one of my favorite projects in which we built a functional Pomodoro app to remind us to take meaningful mental and physical breaks while coding.',
+                  'This is one of my favorite projects in which we built a gorgeous functional Pomodoro app to remind us to take meaningful mental and physical breaks while coding. Plus, I learned how to stop time, which is kind of a big deal.',
     imageSrc: '../content/images/pomodoro.png',
     imageClassName: 'project-image pomodoro',
     imageAlt: 'A screenshot of my Pomodoro project.',
@@ -50,7 +50,7 @@ const projectInfo = {
   shootBreeze: {
     projectTitle: 'Shoot the Breeze',
     aboutProject:
-                  'There just aren\'t enough chat apps in the world, now are there?  Shoot the Breeze allows you a direct, private connection between friends, co-workers, enemies, and anyone else you\'d like to share your deep thoughts and feelings with. This app was built to match a design comp that resulted in a nearly 100% match accuracy. If it were up to me, I would have made some different design choices, but I am proud of this app.',
+                  'There just aren\'t enough chat apps in the world, now are there?  Shoot the Breeze allows you a direct, private connection between friends, co-workers, enemies, and anyone else you\'d like to share your deep thoughts and feelings with. This app was built to match a design comp that resulted in a nearly 100% match. If it were up to me, I definitely would have made some different design choices, but I am proud of how this app turned out.',
     imageSrc: '../content/images/shoot-the-breeze.png',
     imageClassName: 'project-image shoot-the-breeze',
     imageAlt: 'A screenshot of my Shoot the Breeze project.',
@@ -62,7 +62,7 @@ const projectInfo = {
   globot: {
     projectTitle: 'GloBot',
     aboutProject:
-                  'This is an interactive, choose-your-own-adventure style children\'s story about a robot in outer space.  I built this in React and used dynamic SVGs and CSS  transformations and animations to bring the story to life.  I also implemented a text-to-speech API to enable children who are learning to read, English language learners, and people with a disability to access and enjoy the story.',
+                  'This is an interactive, choose-your-own-adventure children\'s story about a robot in outer space.  I built this in React and used dynamic SVGs and CSS  transformations and animations to bring the story to life.  I also implemented a text-to-speech API to enable children who are learning to read, English language learners, and people with a disability to access and enjoy the story.',
     imageSrc: '../content/images/globot.png',
     imageClassName: 'project-image globot',
     imageAlt: 'A screenshot of my GloBot project.',
