@@ -12,7 +12,3 @@ export default class Image extends Component {
     );
   }
 }
-
-// Image.contextTypes = {
-//   router: React.PropTypes.object
-// }

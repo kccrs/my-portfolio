@@ -1,0 +1,57 @@
+.single-project {
+  font-family: $font-raleway;
+  @include breakpoint($large) {
+    letter-spacing: .06em;
+  }
+}
+
+.project-title {
+  @include font-size(22px);
+  color: $color-three;
+  font-weight: bold;
+  margin-bottom: 5%;
+  text-align: center;
+  @include breakpoint($small) {
+    @include font-size(30px);
+  }
+  @include breakpoint($medium) {
+    @include font-size(22px);
+    margin-bottom: 0;
+  }
+}
+
+.project-description,
+.collaborators,
+.tools,
+.github,
+.website {
+  @include font-size(20px);
+  line-height: 1.35em;
+  padding: 3% 7%;
+  @include breakpoint($small) {
+    @include font-size(24px);
+  }
+  @include breakpoint($medium) {
+    @include font-size(18px);
+    padding: 1% 0;
+  }
+  @include breakpoint($extra-large) {
+    padding: 2% 5%;
+  }
+}
+
+.weblink {
+  color: $color-two;
+  font-weight: bold;
+  &:hover {
+    @include font-size(21px);
+    @include breakpoint($small) {
+      @include font-size(25px);
+    }
+  }
+}
+
+.tool-span {
+  color: $color-three;
+  font-weight: bold;
+}
