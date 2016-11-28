@@ -7,13 +7,12 @@
     letter-spacing: .06em;
   }
   @include breakpoint($medium) {
-    padding-left: 30px;
     float: right;
+    padding-left: 30px;
     width: 68vw;
   }
   @include breakpoint($large) {
     padding-left: 40px;
-    // margin: 0 5%;
   }
 }
 
@@ -42,8 +41,8 @@
 
 .history-content article {
   line-height: 1.25em;
-  padding: 10px;
   min-width: 33%;
+  padding: 10px;
   @include breakpoint($small) {
     padding: 10px 20px;
   }
@@ -83,10 +82,10 @@ h5 {
 }
 
 .three::after {
+  content: "▽";
   display: block;
   margin-top: 5px;
   text-align: center;
-  content: "▽";
   @include breakpoint($medium) {
     display: none;
   }

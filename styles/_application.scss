@@ -14,27 +14,27 @@ a {
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 75vh;
+  justify-content: space-between;
   overflow: hidden;
   @include breakpoint($small) {
     height: 80vh;
   }
   @include breakpoint($medium) {
     float: right;
-    width: 68vw;
     height: 100vh;
+    width: 68vw;
   }
 }
 
 .content-box {
   @include font-size(30px);
-  font-family: $font-raleway;
   display: flex;
   flex-direction: column;
+  font-family: $font-raleway;
+  height: 30%;
   justify-content: center;
   letter-spacing: .2em;
-  height: 30%;
   text-align: center;
   @include breakpoint($small) {
     margin: auto;

@@ -34,7 +34,3 @@ export default class Project extends Component {
     );
   }
 }
-
-Project.contextTypes = {
-  router: React.PropTypes.object
-};

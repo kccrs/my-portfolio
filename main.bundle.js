@@ -8196,29 +8196,29 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Code = __webpack_require__(520);
+	var _Code = __webpack_require__(515);
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var _Contact = __webpack_require__(521);
+	var _Contact = __webpack_require__(520);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
-	var _Header = __webpack_require__(522);
+	var _Header = __webpack_require__(521);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _NotFound = __webpack_require__(523);
+	var _MoreCode = __webpack_require__(519);
+
+	var _MoreCode2 = _interopRequireDefault(_MoreCode);
+
+	var _NotFound = __webpack_require__(522);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
-	var _Project = __webpack_require__(516);
-
-	var _Project2 = _interopRequireDefault(_Project);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(524);
+	__webpack_require__(523);
 
 	var Root = function Root() {
 	  return _react2.default.createElement(
@@ -8226,11 +8226,11 @@
 	    null,
 	    _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'full-container' },
 	      _react2.default.createElement(_Header2.default, null),
 	      _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/', component: _App2.default }),
 	      _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/code', component: _Code2.default }),
-	      _react2.default.createElement(_reactRouter.Match, { pattern: '/code/:projectName', component: _Project2.default }),
+	      _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/morecode', component: _MoreCode2.default }),
 	      _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/about', component: _About2.default }),
 	      _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/contact', component: _Contact2.default }),
 	      _react2.default.createElement(_reactRouter.Miss, { component: _NotFound2.default })
@@ -33325,7 +33325,7 @@
 /* 513 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -33355,15 +33355,178 @@
 	  }
 
 	  _createClass(About, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        null,
+	        "div",
+	        { className: "About" },
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'hi'
+	          "section",
+	          { className: "history-content about-me" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "about-section-title" },
+	            "This is me"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "flex-content" },
+	            _react2.default.createElement(
+	              "article",
+	              { className: "one" },
+	              "I am a passionate developer who takes pride in providing a clean, engaging, and interactive web experience.  Keeping up with the latest web technologies enables me to ensure your site is useful, modern, and accessible."
+	            ),
+	            _react2.default.createElement(
+	              "article",
+	              { className: "two" },
+	              "I seek to join a team that encourages growth and collaboration."
+	            ),
+	            _react2.default.createElement(
+	              "article",
+	              { className: "three" },
+	              "When I'm not coding, you can find me camping, reading, watching football, or enjoying all of the cheeses."
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "section",
+	          { className: "history-content my-education" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "about-section-title" },
+	            "I like to learn"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "flex-content" },
+	            _react2.default.createElement(
+	              "article",
+	              { className: "one" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "Turing School of Software & Design"
+	              ),
+	              _react2.default.createElement(
+	                "h4",
+	                null,
+	                "Certificate in Front End Engineering"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "article",
+	              { className: "two" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "University of Colorado Denver"
+	              ),
+	              _react2.default.createElement(
+	                "h4",
+	                null,
+	                "Master of Arts"
+	              ),
+	              _react2.default.createElement(
+	                "h5",
+	                null,
+	                "Curriculum & Instruction - Elementary Math Leadership"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "article",
+	              { className: "three" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "University of Florida"
+	              ),
+	              _react2.default.createElement(
+	                "h4",
+	                null,
+	                "Bachelor of Science"
+	              ),
+	              _react2.default.createElement(
+	                "h5",
+	                null,
+	                "Psychology"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "section",
+	          { className: "history-content my-experience" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "about-section-title" },
+	            "I like to share what I learn"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "flex-content" },
+	            _react2.default.createElement(
+	              "article",
+	              { className: "one" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "WellDyne, Inc."
+	              ),
+	              _react2.default.createElement(
+	                "h4",
+	                null,
+	                "Contract & Credentialing Analyst"
+	              ),
+	              _react2.default.createElement(
+	                "h5",
+	                { className: "history-dates" },
+	                "2012-2016"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "article",
+	              { className: "two" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "Denver Public Schools"
+	              ),
+	              _react2.default.createElement(
+	                "h4",
+	                null,
+	                "Fourth Grade Teacher"
+	              ),
+	              _react2.default.createElement(
+	                "h5",
+	                { className: "history-dates" },
+	                "2013-2014"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "article",
+	              { className: "three" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "Boulder Valley Public Schools"
+	              ),
+	              _react2.default.createElement(
+	                "h4",
+	                null,
+	                "Fifth and First Grade Teacher"
+	              ),
+	              _react2.default.createElement(
+	                "h5",
+	                { className: "history-dates" },
+	                "2010 - 2012"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "a",
+	          { href: "", className: "resume-link" },
+	          "Check out my resume for more."
 	        )
 	      );
 	    }
@@ -33371,6 +33534,8 @@
 
 	  return About;
 	}(_react.Component);
+	// TODO: enter link to resume
+
 
 	exports.default = About;
 
@@ -33390,17 +33555,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Hero = __webpack_require__(515);
-
-	var _Hero2 = _interopRequireDefault(_Hero);
-
-	var _Project = __webpack_require__(516);
-
-	var _Project2 = _interopRequireDefault(_Project);
-
-	var _Code = __webpack_require__(520);
-
-	var _Code2 = _interopRequireDefault(_Code);
+	var _reactRouter = __webpack_require__(475);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33422,7 +33577,54 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', { className: 'App' });
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'App' },
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'about-box content-box' },
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'box-title' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/about' },
+	              'ABOUT ME'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'projects-box content-box' },
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'box-title' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/code' },
+	              'CODE'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'contact-box content-box' },
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'box-title' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/contact' },
+	              'CONTACT'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'h3',
+	          { className: 'copyright copyright-bottom' },
+	          '\xA9 2016 Casey Cross'
+	        )
+	      );
 	    }
 	  }]);
 
@@ -33431,16 +33633,11 @@
 
 	exports.default = App;
 
-
-	App.contextTypes = {
-	  router: _react2.default.PropTypes.object
-	};
-
 /***/ },
 /* 515 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -33452,6 +33649,20 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(475);
+
+	var _Project = __webpack_require__(516);
+
+	var _Project2 = _interopRequireDefault(_Project);
+
+	var _Image = __webpack_require__(518);
+
+	var _Image2 = _interopRequireDefault(_Image);
+
+	var _MoreCode = __webpack_require__(519);
+
+	var _MoreCode2 = _interopRequireDefault(_MoreCode);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33460,41 +33671,61 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Hero = function (_Component) {
-	  _inherits(Hero, _Component);
+	var Code = function (_Component) {
+	  _inherits(Code, _Component);
 
-	  function Hero() {
-	    _classCallCheck(this, Hero);
+	  function Code() {
+	    _classCallCheck(this, Code);
 
-	    return _possibleConstructorReturn(this, (Hero.__proto__ || Object.getPrototypeOf(Hero)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
 	  }
 
-	  _createClass(Hero, [{
-	    key: "render",
+	  _createClass(Code, [{
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "hero-container" },
-	        _react2.default.createElement("img", { src: "../content/images/blurred-lights.jpeg", alt: "Decorative image of colored dots reminiscent of city lights at night.", className: "blur" }),
+	        'section',
+	        { className: 'Code' },
+	        _react2.default.createElement('hr', { className: 'hr-first' }),
 	        _react2.default.createElement(
-	          "section",
-	          { className: "title-container" },
+	          'article',
+	          { className: 'project-container' },
+	          _react2.default.createElement(_Image2.default, { textKey: 'shootBreeze' }),
+	          _react2.default.createElement(_Project2.default, { textKey: 'shootBreeze' })
+	        ),
+	        _react2.default.createElement('hr', null),
+	        _react2.default.createElement(
+	          'article',
+	          { className: 'project-container' },
+	          _react2.default.createElement(_Image2.default, { textKey: 'globot' }),
+	          _react2.default.createElement(_Project2.default, { textKey: 'globot' })
+	        ),
+	        _react2.default.createElement('hr', null),
+	        _react2.default.createElement(
+	          'article',
+	          { className: 'project-container' },
+	          _react2.default.createElement(_Image2.default, { textKey: 'pomodoro' }),
+	          _react2.default.createElement(_Project2.default, { textKey: 'pomodoro' })
+	        ),
+	        _react2.default.createElement('hr', null),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'morecode-link' },
 	          _react2.default.createElement(
-	            "h1",
-	            { className: "my-name" },
-	            "Casey Cross"
+	            _reactRouter.Link,
+	            { to: '/morecode' },
+	            'Click here to see more projects.'
 	          )
-	        )
+	        ),
+	        _react2.default.createElement('hr', { className: 'hr-last' })
 	      );
 	    }
 	  }]);
 
-	  return Hero;
+	  return Code;
 	}(_react.Component);
-	// <h2 className="my-title">Front End Developer</h2>
 
-
-	exports.default = Hero;
+	exports.default = Code;
 
 /***/ },
 /* 516 */
@@ -33512,15 +33743,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(517);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	var _Image = __webpack_require__(518);
-
-	var _Image2 = _interopRequireDefault(_Image);
-
-	var _projectInfo = __webpack_require__(519);
+	var _projectInfo = __webpack_require__(517);
 
 	var _projectInfo2 = _interopRequireDefault(_projectInfo);
 
@@ -33543,75 +33766,56 @@
 
 	  _createClass(Project, [{
 	    key: 'render',
-
-
-	    // returnHome (e) {
-	    //   e.preventDefault();
-	    //   this.context.router.transitionTo('/');
-	    // }
-
 	    value: function render() {
-	      var currentProject = this.props.params.projectName;
-
-	      // let thisProject = projectInfo[currentProject];
-
-	      var projectClass = (0, _classnames2.default)('single-project', currentProject);
+	      var projectName = this.props.textKey;
 
 	      return _react2.default.createElement(
 	        'article',
-	        { className: projectClass },
-	        '// project title',
+	        { className: 'single-project' },
 	        _react2.default.createElement(
-	          'h3',
+	          'h6',
 	          { className: 'project-title' },
-	          thisProject.projectTitle
+	          _projectInfo2.default[projectName].projectTitle
 	        ),
-	        '// project description',
 	        _react2.default.createElement(
 	          'p',
 	          { className: 'project-description' },
-	          thisProject.aboutProject
+	          _projectInfo2.default[projectName].aboutProject
 	        ),
-	        '// image',
-	        _react2.default.createElement(_Image2.default, { textKey: currentProject }),
-	        '// collaborators',
 	        _react2.default.createElement(
 	          'p',
 	          { className: 'collaborators' },
-	          thisProject.collaborators
+	          _projectInfo2.default[projectName].collaborators
 	        ),
-	        '// website urls',
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'tools' },
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'tool-span' },
+	            'Tools used for this project: '
+	          ),
+	          _react2.default.createElement('br', null),
+	          ' ',
+	          _projectInfo2.default[projectName].tools
+	        ),
 	        _react2.default.createElement(
 	          'p',
 	          { className: 'github' },
-	          'Go to the project on',
 	          _react2.default.createElement(
 	            'a',
-	            { href: thisProject.githubLink },
-	            'GitHub'
+	            { href: _projectInfo2.default[projectName].githubLink, className: 'weblink' },
+	            'View the code on GitHub here.'
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'p',
 	          { className: 'website' },
-	          'Visit the project site',
 	          _react2.default.createElement(
 	            'a',
-	            { href: thisProject.projectWebsite },
-	            'here.'
+	            { href: _projectInfo2.default[projectName].projectWebsite, className: 'weblink' },
+	            'Visit the project site here.'
 	          )
-	        ),
-	        '// tools',
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'tools' },
-	          thisProject.tools.map(function (t) {
-	            return _react2.default.createElement(
-	              'li',
-	              { className: 'tool' },
-	              t.value
-	            );
-	          })
 	        )
 	      );
 	    }
@@ -33622,66 +33826,82 @@
 
 	exports.default = Project;
 
-
-	Project.contextTypes = {
-	  router: _react2.default.PropTypes.object
-	};
-
-	// let currentProject = this.props.params.pageId;
-
 /***/ },
 /* 517 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	  Copyright (c) 2016 Jed Watson.
-	  Licensed under the MIT License (MIT), see
-	  http://jedwatson.github.io/classnames
-	*/
-	/* global define */
+	'use strict';
 
-	(function () {
-		'use strict';
+	var projectInfo = {
+	  weatherTracker: {
+	    projectTitle: 'Weather Tracker',
+	    aboutProject: 'This project pulls data from a weather API and allows the user to check their local weather forecast as well as pinning other cities to their dashboard to compare weather.',
+	    imageSrc: '../content/images/weather-tracker.png',
+	    imageClassName: 'project-image weather-tracker',
+	    imageAlt: 'A screenshot of my Weather Tracker project.',
+	    collaborators: 'This project was a collaboration between myself, Brett Hevia, Kyle Misencik, and Mike Sausa.',
+	    githubLink: 'https://github.com/kccrs/weather-forecast',
+	    projectWebsite: 'https://kccrs.github.io/weather-forecast/',
+	    tools: 'HTML5, Sass/CSS3, React, React-Router, Redux'
+	  },
+	  ideaBox: {
+	    projectTitle: 'IdeaBox',
+	    aboutProject: 'This is a site that will store all of your ideas into localStorage.  You can also rank your ideas based on their quality.  Perhaps your ideas are garbage?  If so, you can let everyone know.',
+	    imageSrc: '../content/images/ideabox.png',
+	    imageClassName: 'project-image ideabox',
+	    imageAlt: 'A screenshot of my IdeaBox project.',
+	    collaborators: 'This project was a collaboration between myself and Kyle Misencik.',
+	    githubLink: 'https://github.com/kccrs/ideabox',
+	    projectWebsite: '',
+	    tools: 'HTML5, CSS3, JavaScript, jQuery, localStorage, Git'
+	  },
+	  snakePlane: {
+	    projectTitle: 'Snake on a Plane',
+	    aboutProject: 'This is a version of the classic game Snake but with a fun nod to the cheese-tastic movie "Snakes on a Plane".',
+	    imageSrc: '../content/images/snake-on-plane-screenshot.png',
+	    imageClassName: 'project-image snake-on-plane',
+	    imageAlt: 'A screenshot of my Snake on a Plane project.',
+	    collaborators: 'This project was a collaboration between myself and Paul Nguyen.',
+	    githubLink: 'https://github.com/kccrs/Snakes',
+	    projectWebsite: 'https://kccrs.github.io/Snakes',
+	    tools: 'HTML5, HTML5 Canvas, CSS3, JavaScript, Git'
+	  },
+	  pomodoro: {
+	    projectTitle: 'Pomodoro Timer',
+	    aboutProject: 'This is one of my favorite projects in which we built a functional Pomodoro app to remind us to take meaningful mental and physical breaks while coding.',
+	    imageSrc: '../content/images/pomodoro.png',
+	    imageClassName: 'project-image pomodoro',
+	    imageAlt: 'A screenshot of my Pomodoro project.',
+	    collaborators: 'This project was a collaboration between myself and Madison Kerndt.',
+	    githubLink: 'https://github.com/kccrs/pomodoro-app',
+	    projectWebsite: '',
+	    tools: 'HTML5, Sass/SCSS, JavaScript, jQuery, localStorage, Git, TDD'
+	  },
+	  shootBreeze: {
+	    projectTitle: 'Shoot the Breeze',
+	    aboutProject: 'There just aren\'t enough chat apps in the world, now are there?  Shoot the Breeze allows you a direct, private connection between friends, co-workers, enemies, and anyone else you\'d like to share your deep thoughts and feelings with. This app was built to match a design comp that resulted in a nearly 100% match accuracy. If it were up to me, I would have made some different design choices, but I am proud of this app.',
+	    imageSrc: '../content/images/shoot-the-breeze.png',
+	    imageClassName: 'project-image shoot-the-breeze',
+	    imageAlt: 'A screenshot of my Shoot the Breeze project.',
+	    collaborators: 'This project was a collaboration between myself and Jeff Duke.',
+	    githubLink: 'https://github.com/kccrs/shoot-the-breeze',
+	    projectWebsite: 'https://shoot-the-breeze-9f4d8.firebaseapp.com/',
+	    tools: 'HTML5, Sass/SCSS, JavaScript, React, Firebase, Git'
+	  },
+	  globot: {
+	    projectTitle: 'GloBot',
+	    aboutProject: 'This is an interactive, choose-your-own-adventure style children\'s story about a robot in outer space.  I built this in React and used dynamic SVGs and CSS  transformations and animations to bring the story to life.  I also implemented a text-to-speech API to enable children who are learning to read, English language learners, and people with a disability to access and enjoy the story.',
+	    imageSrc: '../content/images/globot.png',
+	    imageClassName: 'project-image globot',
+	    imageAlt: 'A screenshot of my GloBot project.',
+	    collaborators: 'I completed this project independently.',
+	    githubLink: 'https://github.com/kccrs/globot',
+	    projectWebsite: '',
+	    tools: 'HTML5, Sass/SCSS, CSS Animations, JavaScript, React, React Router, Git, Text to Speech API'
+	  }
+	};
 
-		var hasOwn = {}.hasOwnProperty;
-
-		function classNames () {
-			var classes = [];
-
-			for (var i = 0; i < arguments.length; i++) {
-				var arg = arguments[i];
-				if (!arg) continue;
-
-				var argType = typeof arg;
-
-				if (argType === 'string' || argType === 'number') {
-					classes.push(arg);
-				} else if (Array.isArray(arg)) {
-					classes.push(classNames.apply(null, arg));
-				} else if (argType === 'object') {
-					for (var key in arg) {
-						if (hasOwn.call(arg, key) && arg[key]) {
-							classes.push(key);
-						}
-					}
-				}
-			}
-
-			return classes.join(' ');
-		}
-
-		if (typeof module !== 'undefined' && module.exports) {
-			module.exports = classNames;
-		} else if (true) {
-			// register as 'classnames', consistent with npm package name
-			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-				return classNames;
-			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else {
-			window.classNames = classNames;
-		}
-	}());
-
+	module.exports = projectInfo;
 
 /***/ },
 /* 518 */
@@ -33699,7 +33919,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _projectInfo = __webpack_require__(519);
+	var _projectInfo = __webpack_require__(517);
 
 	var _projectInfo2 = _interopRequireDefault(_projectInfo);
 
@@ -33734,103 +33954,10 @@
 	  return Image;
 	}(_react.Component);
 
-	// Image.contextTypes = {
-	//   router: React.PropTypes.object
-	// }
-
-
 	exports.default = Image;
 
 /***/ },
 /* 519 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	var projectInfo = {
-	  colorChanger: {
-	    projectTitle: 'Color Changer',
-	    aboutProject: 'This is a fun little program, especially if you really respond to colors like I do.  It reminds me of a remarkable exhibit called Mood Lighting I experienced at the <a href="http://www.exploratorium.edu/"> Exploratorium</a> in San Francisco.  You place your head inside a large sphere that illuminates with varying colors which you can manually adjust.  It was a unique immersive experience that invoked strong emotional reactions. You can check that out <a href="http://www.exploratorium.edu/mind/about/more_exhibits.html">here.</a>',
-	    imageSrc: '../content/images/color-changer.png',
-	    imageClassName: 'project-image color-changer',
-	    imageAlt: 'A screenshot of my Color Changer project.',
-	    collaborators: 'This project was completed independently.',
-	    githubLink: 'https://github.com/kccrs/color-changer',
-	    projectWebsite: 'https://kccrs.github.io/color-changer/',
-	    tools: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Git']
-	  },
-	  ideaBox: {
-	    projectTitle: 'IdeaBox',
-	    aboutProject: 'This is a site that will store all of your ideas into localStorage.  You can also rank your ideas based on their quality.  Perhaps your ideas are garbage?  If so, you can let everyone know.',
-	    imageSrc: '../content/images/ideabox.png',
-	    imageClassName: 'project-image ideabox',
-	    imageAlt: 'A screenshot of my IdeaBox project.',
-	    collaborators: 'This project was a collaboration between myself and Kyle Misencik.',
-	    githubLink: 'https://github.com/kccrs/ideabox',
-	    projectWebsite: '',
-	    tools: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'localStorage', 'Git']
-	  },
-	  snakePlane: {
-	    projectTitle: 'Snake on a Plane',
-	    aboutProject: 'This is a version of the classic game Snake but with a fun nod to the cheese-tastic movie "Snakes on a Plane".',
-	    imageSrc: '../content/images/snake-on-plane-screenshot.png',
-	    imageClassName: 'project-image snake-on-plane',
-	    imageAlt: 'A screenshot of my Snake on a Plane project.',
-	    collaborators: 'This project was a collaboration between myself and Paul Nguyen.',
-	    githubLink: 'https://github.com/kccrs/Snakes',
-	    projectWebsite: 'https://kccrs.github.io/Snakes',
-	    tools: ['HTML5', 'HTML5 Canvas', 'CSS3', 'JavaScript', 'O.O.P.', 'Git']
-	  },
-	  pomodoro: {
-	    projectTitle: 'Pomodoro Timer',
-	    aboutProject: 'This is one of my favorite projects where we built a functional Pomodoro app to remind us to take meaningful breaks while coding.',
-	    imageSrc: '../content/images/pomodoro.png',
-	    imageClassName: 'project-image pomodoro',
-	    imageAlt: 'A screenshot of my Pomodoro project.',
-	    collaborators: 'This project was a collaboration between myself and Madison Kerndt.',
-	    githubLink: 'https://github.com/kccrs/pomodoro-app',
-	    projectWebsite: '',
-	    tools: ['HTML5', 'Sass/SCSS', 'JavaScript', 'jQuery', 'localStorage', 'Git', 'TDD']
-	  },
-	  fontPair: {
-	    projectTitle: 'Font Pairing',
-	    aboutProject: 'In an attempt to study how fonts can work together to create inventive and coherent design elements, I was inspired by designer Do-Hee Kim\'s project, <a href="http://100daysoffonts.com/">"100 Days of Fonts"</a> to create my own, much smaller iteration of this idea.',
-	    imageSrc: '../content/images/seven-weeks-of-fonts.png',
-	    imageClassName: 'project-image seven-weeks-of-fonts',
-	    imageAlt: 'A screenshot of my Font Pairing project.',
-	    collaborators: 'This project was completed independently.',
-	    githubLink: 'https://github.com/kccrs/six-weeks-of-fonts',
-	    projectWebsite: 'https://kccrs.github.io/six-weeks-of-fonts/',
-	    tools: ['HTML5', 'Sass/SCSS', 'JavaScript', 'jQuery', 'Git']
-	  },
-	  shootBreeze: {
-	    projectTitle: 'Shoot the Breeze',
-	    aboutProject: 'There just aren\'t enough chat apps in the world, now are there?  Don\'t worry, I\'ve got one for you! Shoot the breeze is built using React and Firebase and allows you a direct private connection between friends, co-workers, enemies, and anyone else you\'d like to share your deep thoughts and feelings with. This app was built to match a design spec that resulted in nearly 100% accuracy with the comp. If it were up to me, I would have made some different design choices, but I am proud of this app.',
-	    imageSrc: '../content/images/shoot-the-breeze.png',
-	    imageClassName: 'project-image shoot-the-breeze',
-	    imageAlt: 'A screenshot of my Shoot the Breeze project.',
-	    collaborators: 'This project was a collaboration between myself and Jeff Duke.',
-	    githubLink: 'https://github.com/kccrs/shoot-the-breeze',
-	    projectWebsite: 'https://shoot-the-breeze-9f4d8.firebaseapp.com/',
-	    tools: ['HTML5', 'Sass/SCSS', 'JavaScript', 'React', 'Firebase', 'Git']
-	  },
-	  globot: {
-	    projectTitle: 'GloBot',
-	    aboutProject: 'This is an interactive, choose-your-own-adventure style children\'s story about a robot in outer space.  I built this in React and used dynamic SVGs and CSS  transformations and animations.  I also implemented a text-to-speech API to enable children who are learning to read, English language learners, and people with a disability to access and enjoy the story.',
-	    imageSrc: '../content/images/globot.png',
-	    imageClassName: 'project-image globot',
-	    imageAlt: 'A screenshot of my GloBot project.',
-	    collaborators: 'I completed this project independently.',
-	    githubLink: 'https://github.com/kccrs/globot',
-	    projectWebsite: '',
-	    tools: ['HTML5', 'Sass/SCSS', 'CSS Animations', 'JavaScript', 'React', 'React Router', 'Git', 'Text to Speech API']
-	  }
-	};
-
-	module.exports = projectInfo;
-
-/***/ },
-/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33849,6 +33976,10 @@
 
 	var _Project2 = _interopRequireDefault(_Project);
 
+	var _Image = __webpack_require__(518);
+
+	var _Image2 = _interopRequireDefault(_Image);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33856,51 +33987,58 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	// import projectInfo from '../content/projectInfo';
 
+	var MoreCode = function (_Component) {
+	  _inherits(MoreCode, _Component);
 
-	var Code = function (_Component) {
-	  _inherits(Code, _Component);
+	  function MoreCode() {
+	    _classCallCheck(this, MoreCode);
 
-	  function Code() {
-	    _classCallCheck(this, Code);
-
-	    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (MoreCode.__proto__ || Object.getPrototypeOf(MoreCode)).apply(this, arguments));
 	  }
 
-	  _createClass(Code, [{
-	    key: 'goToProject',
-	    value: function goToProject(e) {
-	      e.preventDefault();
-	      this.context.router.transitionTo('/' + projectName);
-	    }
-	  }, {
+	  _createClass(MoreCode, [{
 	    key: 'render',
 	    value: function render() {
-	      // let projectName = this.props.textKey;
-
 	      return _react2.default.createElement(
-	        'div',
-	        null,
+	        'section',
+	        { className: 'Code' },
+	        _react2.default.createElement('hr', { className: 'hr-first' }),
 	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'This seems to be rendering'
-	        )
+	          'article',
+	          { className: 'project-container' },
+	          _react2.default.createElement(_Image2.default, { textKey: 'weatherTracker' }),
+	          _react2.default.createElement(_Project2.default, { textKey: 'weatherTracker' })
+	        ),
+	        _react2.default.createElement('hr', null),
+	        _react2.default.createElement(
+	          'article',
+	          { className: 'project-container' },
+	          _react2.default.createElement(_Image2.default, { textKey: 'snakePlane' }),
+	          _react2.default.createElement(_Project2.default, { textKey: 'snakePlane' })
+	        ),
+	        _react2.default.createElement('hr', null),
+	        _react2.default.createElement(
+	          'article',
+	          { className: 'project-container' },
+	          _react2.default.createElement(_Image2.default, { textKey: 'ideaBox' }),
+	          _react2.default.createElement(_Project2.default, { textKey: 'ideaBox' })
+	        ),
+	        _react2.default.createElement('hr', { className: 'hr-last' })
 	      );
 	    }
 	  }]);
 
-	  return Code;
+	  return MoreCode;
 	}(_react.Component);
 
-	exports.default = Code;
+	exports.default = MoreCode;
 
 /***/ },
-/* 521 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -33930,15 +34068,55 @@
 	  }
 
 	  _createClass(Contact, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        null,
+	        "div",
+	        { className: "Contact" },
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'hi'
+	          "h2",
+	          { className: "contact-blurb" },
+	          "Feel free to contact me for future nerd adventures and opportunities!"
+	        ),
+	        _react2.default.createElement(
+	          "ul",
+	          { className: "contact-list" },
+	          _react2.default.createElement(
+	            "li",
+	            { className: "social-media-icon" },
+	            _react2.default.createElement(
+	              "a",
+	              { href: "https://github.com/kccrs" },
+	              _react2.default.createElement("img", { src: "../content/images/github-square.svg", alt: "GitHub icon" })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            { className: "social-media-icon" },
+	            _react2.default.createElement(
+	              "a",
+	              { href: "https://www.linkedin.com/in/caseycross" },
+	              _react2.default.createElement("img", { src: "../content/images/linkedin-square.svg", alt: "LinkedIn icon" })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            { className: "social-media-icon" },
+	            _react2.default.createElement(
+	              "a",
+	              { href: "https://twitter.com/kccrs" },
+	              _react2.default.createElement("img", { src: "../content/images/twitter-square.svg", alt: "Twitter icon" })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            { className: "social-media-icon" },
+	            _react2.default.createElement(
+	              "a",
+	              { href: "mailto:hellocaseycross@gmail.com" },
+	              _react2.default.createElement("img", { src: "../content/images/gmail-square.svg", alt: "email icon" })
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -33950,7 +34128,7 @@
 	exports.default = Contact;
 
 /***/ },
-/* 522 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34002,16 +34180,7 @@
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: '/' },
-	                'Home'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/code' },
-	                'Code'
+	                'HOME'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -34020,7 +34189,16 @@
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: '/about' },
-	                'About'
+	                'ABOUT'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/code' },
+	                'CODE'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -34029,7 +34207,7 @@
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: '/contact' },
-	                'Contact'
+	                'CONTACT'
 	              )
 	            )
 	          )
@@ -34040,7 +34218,11 @@
 	          _react2.default.createElement(
 	            'h1',
 	            { className: 'my-name' },
-	            'Casey Cross'
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/' },
+	              'Casey Cross'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'h2',
@@ -34049,7 +34231,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'h3',
-	            { className: 'copyright' },
+	            { className: 'copyright copyright-header' },
 	            '\xA9 2016 Casey Cross'
 	          )
 	        )
@@ -34064,7 +34246,7 @@
 	;
 
 /***/ },
-/* 523 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34104,8 +34286,8 @@
 	        { className: "NotFound" },
 	        _react2.default.createElement(
 	          "p",
-	          { className: "error" },
-	          "Error 404: Page Not Found"
+	          { className: "page-error" },
+	          "Error: This is not the page you're looking for."
 	        )
 	      );
 	    }
@@ -34118,16 +34300,16 @@
 	;
 
 /***/ },
-/* 524 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(525);
+	var content = __webpack_require__(524);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(527)(content, {});
+	var update = __webpack_require__(526)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -34144,21 +34326,21 @@
 	}
 
 /***/ },
-/* 525 */
+/* 524 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(526)();
+	exports = module.exports = __webpack_require__(525)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Cagliostro|Macondo|Simonetta|Montserrat|Raleway:100,200,300|Montserrat+Alternates);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Macondo|Raleway:100,200,300);", ""]);
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  /* Hides the slider so that custom slider can be made */\n  width: 100%;\n  /* Specific width is required for Firefox. */\n  background: transparent;\n  /* Otherwise white in Chrome */ }\n\ninput[type=range]::-webkit-slider-thumb {\n  -webkit-appearance: none; }\n\ninput[type=range]:focus {\n  outline: none;\n  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }\n\ninput[type=range]::-ms-track {\n  width: 100%;\n  cursor: pointer;\n  /* Hides the slider so custom styles can be added */\n  background: transparent;\n  border-color: transparent;\n  color: transparent; }\n\nhtml {\n  color: #18216A;\n  height: 100%;\n  min-width: 100%; }\n  html *, html *:before, html *:after {\n    -moz-box-sizing: border-box;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box; }\n\n*, *:before, *:after {\n  box-sizing: inherit; }\n\nheader {\n  height: 100vh;\n  max-width: 30%;\n  padding-right: 10px;\n  text-align: right; }\n\nnav {\n  font-size: 2.5rem;\n  font-family: \"Raleway\", sans-serif;\n  height: 65vh; }\n\n.nav-links {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  height: 100%; }\n\na {\n  text-decoration: none;\n  color: #18216A; }\n\n.logo {\n  height: 35vh;\n  padding-top: 20%; }\n\n.my-name {\n  font-size: 3.125rem;\n  font-family: \"Macondo\", serif; }\n\n.my-title {\n  font-size: 1.25rem;\n  font-family: \"Raleway\", sans-serif;\n  font-weight: 300;\n  margin-top: 20px; }\n\n.copyright {\n  font-size: 0.625rem;\n  font-family: \"Raleway\", sans-serif;\n  font-weight: 300;\n  margin-top: 30px; }\n\n.NotFound {\n  height: 100vh; }\n\n.error {\n  font-size: 40px;\n  margin-top: 20%;\n  text-align: center; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  /* Hides the slider so that custom slider can be made */\n  width: 100%;\n  /* Specific width is required for Firefox. */\n  background: transparent;\n  /* Otherwise white in Chrome */ }\n\ninput[type=range]::-webkit-slider-thumb {\n  -webkit-appearance: none; }\n\ninput[type=range]:focus {\n  outline: none;\n  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }\n\ninput[type=range]::-ms-track {\n  width: 100%;\n  cursor: pointer;\n  /* Hides the slider so custom styles can be added */\n  background: transparent;\n  border-color: transparent;\n  color: transparent; }\n\nhtml *, html *:before, html *:after {\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\n*, *:before, *:after {\n  box-sizing: inherit; }\n\na {\n  color: black;\n  text-decoration: none; }\n\n.App {\n  display: flex;\n  flex-direction: column;\n  height: 75vh;\n  justify-content: space-between;\n  overflow: hidden; }\n  @media screen and (min-width: 480px) {\n    .App {\n      height: 80vh; } }\n  @media screen and (min-width: 780px) {\n    .App {\n      float: right;\n      height: 100vh;\n      width: 68vw; } }\n\n.content-box {\n  font-size: 1.875rem;\n  display: flex;\n  flex-direction: column;\n  font-family: \"Raleway\", sans-serif;\n  height: 30%;\n  justify-content: center;\n  letter-spacing: .2em;\n  text-align: center; }\n  @media screen and (min-width: 480px) {\n    .content-box {\n      margin: auto;\n      width: 90%; } }\n  @media screen and (min-width: 780px) {\n    .content-box {\n      margin: 0 auto; } }\n  @media screen and (min-width: 1000px) {\n    .content-box {\n      width: 85%; } }\n\n.about-box {\n  background: url(\"/content/images/toronto.jpg\") center center; }\n\n.contact-box {\n  background: url(\"/content/images/pink-sky.jpg\") center center; }\n\n.projects-box {\n  background: url(\"/content/images/london-pattern.jpeg\") center center; }\n\n.box-title a {\n  color: white; }\n\nheader {\n  align-items: space-around;\n  display: flex;\n  flex-direction: column-reverse;\n  height: 25vh; }\n  @media screen and (min-width: 480px) {\n    header {\n      align-items: center;\n      flex-direction: row-reverse;\n      height: 20vh;\n      justify-content: space-around; } }\n  @media screen and (min-width: 780px) {\n    header {\n      flex-direction: column;\n      float: left;\n      height: 100vh;\n      position: fixed;\n      width: 30vw; } }\n\nnav {\n  font-family: \"Raleway\", sans-serif;\n  margin: 20px 0 30px 0; }\n  @media screen and (min-width: 480px) {\n    nav {\n      margin: 0;\n      padding-top: 5px;\n      width: 50%; } }\n  @media screen and (min-width: 780px) {\n    nav {\n      width: 100%; } }\n\n.nav-links {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around; }\n  @media screen and (min-width: 780px) {\n    .nav-links {\n      font-size: 1.875rem;\n      align-items: flex-end;\n      flex-direction: column;\n      height: 60vh; } }\n\n.nav-links a {\n  color: black; }\n\n@media screen and (min-width: 480px) {\n  .logo {\n    width: 45%; } }\n\n@media screen and (min-width: 780px) {\n  .logo {\n    height: 40vh;\n    width: 100%; } }\n\n.my-name {\n  font-size: 2.5rem;\n  font-family: \"Macondo\", serif;\n  text-align: center; }\n  @media screen and (min-width: 780px) {\n    .my-name {\n      margin-top: 2em; } }\n  @media screen and (min-width: 1000px) {\n    .my-name {\n      font-size: 3.125rem; } }\n\n.my-title {\n  font-size: 0.9375rem;\n  display: none;\n  font-family: \"Raleway\", sans-serif;\n  font-weight: 100;\n  text-align: center; }\n  @media screen and (min-width: 480px) {\n    .my-title {\n      display: block;\n      margin-top: .5em; } }\n  @media screen and (min-width: 780px) {\n    .my-title {\n      font-size: 1.25rem;\n      font-weight: 200; } }\n  @media screen and (min-width: 1000px) {\n    .my-title {\n      font-size: 1.875rem; } }\n\n.copyright {\n  font-family: \"Raleway\", sans-serif;\n  font-weight: 100; }\n\n.copyright-header {\n  display: none; }\n  @media screen and (min-width: 780px) {\n    .copyright-header {\n      font-size: 0.875rem;\n      display: block;\n      margin-top: 2em;\n      text-align: center; } }\n\n.copyright-bottom {\n  font-size: 0.625rem;\n  padding-bottom: 5px;\n  text-align: center; }\n  @media screen and (min-width: 780px) {\n    .copyright-bottom {\n      display: none; } }\n\n.About {\n  display: flex;\n  flex-direction: column;\n  font-family: \"Raleway\", sans-serif;\n  letter-spacing: .03em; }\n  @media screen and (min-width: 480px) {\n    .About {\n      letter-spacing: .06em; } }\n  @media screen and (min-width: 780px) {\n    .About {\n      float: right;\n      padding-left: 30px;\n      width: 68vw; } }\n  @media screen and (min-width: 900px) {\n    .About {\n      padding-left: 40px; } }\n\n.about-section-title {\n  background: url(\"/content/images/toronto.jpg\") center center;\n  color: white;\n  padding: 10px 0;\n  text-align: center;\n  text-transform: uppercase; }\n\n.history-content {\n  font-size: 1.25rem;\n  margin-bottom: 20px; }\n  @media screen and (min-width: 900px) {\n    .history-content {\n      margin-top: 20px; } }\n\n@media screen and (min-width: 780px) {\n  .my-education .flex-content,\n  .my-experience .flex-content {\n    display: flex; } }\n\n.history-content article {\n  line-height: 1.25em;\n  min-width: 33%;\n  padding: 10px; }\n  @media screen and (min-width: 480px) {\n    .history-content article {\n      padding: 10px 20px; } }\n\n.about-me {\n  background-color: #65a0b3; }\n  .about-me .one {\n    background-color: #87b5c4; }\n  .about-me .two {\n    background-color: #cbdfe6; }\n  .about-me .three {\n    background-color: #eef4f6; }\n\n.my-education {\n  background-color: #635074; }\n  .my-education .one {\n    background-color: #7d6592; }\n  .my-education .two {\n    background-color: #afa0bd; }\n  .my-education .three {\n    background-color: #c9bed2; }\n\n.my-experience {\n  background-color: #597390; }\n  .my-experience .one {\n    background-color: #738da9; }\n  .my-experience .two {\n    background-color: #b2c0d0; }\n  .my-experience .three {\n    background-color: #d2dae3; }\n\nh3, h4, h5 {\n  text-align: right; }\n\nh3 {\n  font-size: 1.25rem;\n  font-weight: bold; }\n\nh4 {\n  font-size: 1.0625rem;\n  margin-top: 1em; }\n\nh5 {\n  font-size: 0.875rem; }\n  @media screen and (min-width: 780px) {\n    h5 {\n      margin-top: 10px; } }\n\n.three::after {\n  content: \"\\25BD\";\n  display: block;\n  margin-top: 5px;\n  text-align: center; }\n  @media screen and (min-width: 780px) {\n    .three::after {\n      display: none; } }\n\n.resume-link {\n  font-size: 1rem;\n  font-weight: bold;\n  margin-bottom: 20px;\n  text-align: center; }\n\n.resume-link::before {\n  color: #635074;\n  content: \"\\2192    \"; }\n\n.resume-link::after {\n  color: #635074;\n  content: \"  \\2190\"; }\n\n.Contact {\n  background: url(\"/content/images/pink-sky.jpg\") center center;\n  height: 75vh; }\n  @media screen and (min-width: 780px) {\n    .Contact {\n      float: right;\n      height: 100vh;\n      width: 65vw; } }\n  @media screen and (min-width: 900px) {\n    .Contact {\n      background-size: cover; } }\n\n.contact-blurb {\n  font-size: 1.75rem;\n  font-family: \"Raleway\", sans-serif;\n  letter-spacing: .06em;\n  line-height: 1.4em;\n  padding: 20% 10%;\n  text-align: center; }\n  @media screen and (min-width: 780px) {\n    .contact-blurb {\n      font-size: 2.5rem;\n      margin-top: 10%; } }\n\n.contact-list {\n  display: flex;\n  justify-content: space-around;\n  margin: 20px 10px;\n  padding: 10px; }\n\n.social-media-icon img {\n  background-color: rgba(0, 0, 0, 0.5);\n  height: 50px;\n  width: 50px; }\n  @media screen and (min-width: 1000px) {\n    .social-media-icon img {\n      height: 75px;\n      width: 75px; } }\n\n@media screen and (min-width: 780px) {\n  .Code {\n    display: flex;\n    flex-direction: column;\n    float: right;\n    width: 68vw; } }\n\n@media screen and (min-width: 780px) {\n  .project-container {\n    align-items: center;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    margin-bottom: 5%;\n    margin: 0 5%;\n    width: 90%; } }\n\n.project-image {\n  margin-bottom: 5%;\n  max-width: 100%; }\n  @media screen and (min-width: 780px) {\n    .project-image {\n      width: 85%; } }\n\n.morecode-link {\n  font-size: 1.125rem;\n  color: #635074;\n  font-family: \"Raleway\", sans-serif;\n  margin: 20px 0;\n  text-align: center; }\n  @media screen and (min-width: 480px) {\n    .morecode-link {\n      font-size: 1.5rem; } }\n  @media screen and (min-width: 780px) {\n    .morecode-link {\n      font-size: 1.25rem;\n      margin-top: 0; } }\n\nhr {\n  border: 0;\n  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);\n  height: 12px;\n  margin: 20px 0; }\n  @media screen and (min-width: 780px) {\n    hr {\n      background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);\n      border: 0;\n      height: 2px;\n      margin: 0 10% 5%; } }\n\n.hr-last {\n  margin-bottom: 0; }\n\n@media screen and (min-width: 780px) {\n  .hr-first,\n  .hr-last {\n    display: none; } }\n\n.single-project {\n  font-family: \"Raleway\", sans-serif; }\n  @media screen and (min-width: 900px) {\n    .single-project {\n      letter-spacing: .06em; } }\n\n.project-title {\n  font-size: 1.375rem;\n  color: #597390;\n  font-weight: bold;\n  margin-bottom: 5%;\n  text-align: center; }\n  @media screen and (min-width: 480px) {\n    .project-title {\n      font-size: 1.875rem; } }\n  @media screen and (min-width: 780px) {\n    .project-title {\n      font-size: 1.375rem;\n      margin-bottom: 0; } }\n\n.project-description,\n.collaborators,\n.tools,\n.github,\n.website {\n  font-size: 1.25rem;\n  line-height: 1.35em;\n  padding: 3% 7%; }\n  @media screen and (min-width: 480px) {\n    .project-description,\n    .collaborators,\n    .tools,\n    .github,\n    .website {\n      font-size: 1.5rem; } }\n  @media screen and (min-width: 780px) {\n    .project-description,\n    .collaborators,\n    .tools,\n    .github,\n    .website {\n      font-size: 1.125rem;\n      padding: 1% 0; } }\n  @media screen and (min-width: 1000px) {\n    .project-description,\n    .collaborators,\n    .tools,\n    .github,\n    .website {\n      padding: 2% 5%; } }\n\n.weblink {\n  color: #635074;\n  font-weight: bold; }\n  .weblink:hover {\n    font-size: 1.3125rem; }\n    @media screen and (min-width: 480px) {\n      .weblink:hover {\n        font-size: 1.5625rem; } }\n\n.tool-span {\n  color: #597390;\n  font-weight: bold; }\n\n.NotFound {\n  height: 100vh; }\n\n.page-error {\n  font-size: 40px;\n  margin-top: 20%;\n  text-align: center; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 526 */
+/* 525 */
 /***/ function(module, exports) {
 
 	/*
@@ -34214,7 +34396,7 @@
 
 
 /***/ },
-/* 527 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
