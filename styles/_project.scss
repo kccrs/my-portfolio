@@ -1,6 +1,8 @@
 .single-project {
   font-family: $font-raleway;
-  // margin: 10px 0;
+  @include breakpoint($large) {
+    letter-spacing: .06em;
+  }
 }
 
 .project-title {
@@ -11,7 +13,10 @@
   margin-bottom: 5%;
   @include breakpoint($small) {
     @include font-size(30px);
-    // margin: 20px 0;
+  }
+  @include breakpoint($medium) {
+    @include font-size(22px);
+    margin-bottom: 0;
   }
 }
 
@@ -25,7 +30,13 @@
   padding: 3% 7%;
   @include breakpoint($small) {
     @include font-size(24px);
-    // margin: 10px 30px;
+  }
+  @include breakpoint($medium) {
+    @include font-size(18px);
+    padding: 1% 0;
+  }
+  @include breakpoint($extra-large) {
+    padding: 2% 5%;
   }
 }
 

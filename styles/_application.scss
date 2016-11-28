@@ -21,6 +21,8 @@ a {
     height: 80vh;
   }
   @include breakpoint($medium) {
+    float: right;
+    width: 68vw;
     height: 100vh;
   }
 }

@@ -10,7 +10,7 @@ export default class Code extends Component {
   render () {
     return (
       <section className="Code">
-        <hr />
+        <hr className="hr-first"/>
         <article className="project-container">
           <Image textKey="shootBreeze" />
           <Project textKey="shootBreeze"/>
@@ -29,7 +29,7 @@ export default class Code extends Component {
         <p className="morecode-link">
           <Link to="/morecode">Click here to see more projects.</Link>
         </p>
-        <hr />
+        <hr className="hr-last" />
       </section>
     );
   }

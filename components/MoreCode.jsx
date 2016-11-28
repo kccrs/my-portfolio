@@ -8,7 +8,7 @@ export default class MoreCode extends Component {
   render () {
     return (
       <section className="Code">
-        <hr />
+        <hr className="hr-first"/>
         <article className="project-container">
           <Image textKey="weatherTracker" />
           <Project textKey="weatherTracker"/>
