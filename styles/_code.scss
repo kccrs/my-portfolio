@@ -29,7 +29,6 @@
 
 .morecode-link {
   @include font-size(18px);
-  color: $color-two;
   font-family: $font-raleway;
   margin: 20px 0;
   text-align: center;
@@ -39,6 +38,14 @@
   @include breakpoint($medium) {
     @include font-size(20px);
     margin-top: 0;
+  }
+}
+
+.morecode-link a {
+  color: saturate($color-two, 80);
+  &:hover {
+    font-weight: bold;
+    letter-spacing: .2em;
   }
 }
 

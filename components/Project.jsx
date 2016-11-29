@@ -27,7 +27,7 @@ export default class Project extends Component {
         </p>
         <p className="website">
           <a href={projectInfo[projectName].projectWebsite} className="weblink">
-            Visit the project site here.
+            {projectInfo[projectName].hasWebsite}
           </a>
         </p>
       </article>
