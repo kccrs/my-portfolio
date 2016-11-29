@@ -15,15 +15,14 @@
 }
 
 @mixin color-gradient($color) {
-  background-color: $color;
   .one {
-    background-color: lighten($color, 10);
+    background-color: $color;
   }
   .two {
-    background-color: lighten($color, 30);
+    background-color: lighten($color, 20);
   }
   .three {
-    background-color: lighten($color, 40);
+    background-color: lighten($color, 30);
   }
 }
 

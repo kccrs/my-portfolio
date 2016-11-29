@@ -48,16 +48,10 @@
   }
 }
 
-.about-me {
-  @include color-gradient($color-one);
-}
-
-.my-education {
-  @include color-gradient($color-two);
-}
-
+.about-me,
+.my-education,
 .my-experience {
-  @include color-gradient($color-three);
+  @include color-gradient($color-one);
 }
 
 h3, h4, h5 {
@@ -92,18 +86,25 @@ h5 {
 }
 
 .resume-link {
-  @include font-size(16px);
+  @include font-size(20px);
+  color: $color-one;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
+  &:hover {
+    color: saturate($color-two, 80);
+    letter-spacing: .15em;
+  }
 }
 
 .resume-link::before {
-  color: $color-two;
+  @include font-size(24px);
+  color: saturate($color-two, 60);
   content: "→  ";
 }
 
 .resume-link::after {
-  color: $color-two;
+  @include font-size(24px);
+  color: saturate($color-two, 60);
   content: "  ←";
 }

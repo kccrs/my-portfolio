@@ -7,7 +7,7 @@
 
 .project-title {
   @include font-size(22px);
-  color: $color-three;
+  color: saturate($color-three, 20);
   font-weight: bold;
   margin-bottom: 5%;
   text-align: center;
@@ -41,13 +41,10 @@
 }
 
 .weblink {
-  color: $color-two;
+  color: saturate($color-two, 80);
   font-weight: bold;
   &:hover {
-    @include font-size(21px);
-    @include breakpoint($small) {
-      @include font-size(25px);
-    }
+    letter-spacing: .15em;
   }
 }
 
