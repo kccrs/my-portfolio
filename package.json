@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server",
     "build": "webpack",
-    "test": "mocha --compilers js:babel-register --require test/helpers/setup.js --recursive"
+    "test": "mocha --compilers js:babel-register --require test/helpers/setup.js --recursive",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   "homepage": "https://github.com/kccrs/my-portfolio#readme",
   "dependencies": {
     "classnames": "^2.2.5",
+    "firebase": "^3.6.1",
+    "gh-pages": "^0.12.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^4.0.0-alpha.3"
