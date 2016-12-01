@@ -57,9 +57,8 @@ export default class About extends Component {
             </article>
           </div>
         </section>
-        <a href="https://www.turing.io/sites/default/files/resumes/Resume%20November%202016.pdf" className="resume-link">Check out my resume for more.</a>
+        <a href="https://www.turing.io/sites/default/files/resumes/Resume%20November%202016_0.pdf" className="resume-link">Check out my resume for more.</a>
       </div>
     );
   }
 }
-// TODO: enter link to resume
