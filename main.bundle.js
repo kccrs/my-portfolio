@@ -34184,7 +34184,7 @@
 	        ),
 	        _react2.default.createElement(
 	          "a",
-	          { href: "https://www.turing.io/sites/default/files/resumes/Resume%20November%202016.pdf", className: "resume-link" },
+	          { href: "./content/current-resume.pdf", className: "resume-link" },
 	          "Check out my resume for more."
 	        )
 	      );
@@ -34193,8 +34193,6 @@
 
 	  return About;
 	}(_react.Component);
-	// TODO: enter link to resume
-
 
 	exports.default = About;
 
