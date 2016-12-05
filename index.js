@@ -1,14 +1,14 @@
 require('./styles/style.scss');
-import * as firebase from 'firebase';
-
-var config = {
-  apiKey: "AIzaSyAJ070ya_-4iEw7RqW7p1rBFgPEoZ1NhQQ",
-  authDomain: "portfolio-3b1f6.firebaseapp.com",
-  databaseURL: "https://portfolio-3b1f6.firebaseio.com",
-  storageBucket: "portfolio-3b1f6.appspot.com",
-  messagingSenderId: "693463840908"
-};
-firebase.initializeApp(config);
+// import * as firebase from 'firebase';
+//
+// var config = {
+//   apiKey: "AIzaSyAJ070ya_-4iEw7RqW7p1rBFgPEoZ1NhQQ",
+//   authDomain: "portfolio-3b1f6.firebaseapp.com",
+//   databaseURL: "https://portfolio-3b1f6.firebaseio.com",
+//   storageBucket: "portfolio-3b1f6.appspot.com",
+//   messagingSenderId: "693463840908"
+// };
+// firebase.initializeApp(config);
 
 import React from 'react';
 import { render } from 'react-dom';
