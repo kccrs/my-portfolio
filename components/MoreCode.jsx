@@ -7,6 +7,7 @@ export default class MoreCode extends Component {
 
   render () {
     return (
+      <section>
         <article className="project-container">
           <Image textKey="snakePlane" />
           <Project textKey="snakePlane"/>
