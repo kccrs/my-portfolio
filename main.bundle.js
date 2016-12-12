@@ -34016,7 +34016,8 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'section',
-	        null,
+	        { className: 'Code' },
+	        _react2.default.createElement('hr', { className: 'hr-first' }),
 	        _react2.default.createElement(
 	          'article',
 	          { className: 'project-container' },
