@@ -7,13 +7,6 @@ export default class MoreCode extends Component {
 
   render () {
     return (
-      <section className="Code">
-        <hr className="hr-first"/>
-        <article className="project-container">
-          <Image textKey="weatherTracker" />
-          <Project textKey="weatherTracker"/>
-        </article>
-        <hr />
         <article className="project-container">
           <Image textKey="snakePlane" />
           <Project textKey="snakePlane"/>
