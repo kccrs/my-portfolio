@@ -8219,16 +8219,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	__webpack_require__(523);
-	// import * as firebase from 'firebase';
-	//
-	// var config = {
-	//   apiKey: "AIzaSyAJ070ya_-4iEw7RqW7p1rBFgPEoZ1NhQQ",
-	//   authDomain: "portfolio-3b1f6.firebaseapp.com",
-	//   databaseURL: "https://portfolio-3b1f6.firebaseio.com",
-	//   storageBucket: "portfolio-3b1f6.appspot.com",
-	//   messagingSenderId: "693463840908"
-	// };
-	// firebase.initializeApp(config);
 
 	var Root = function Root() {
 	  return _react2.default.createElement(
