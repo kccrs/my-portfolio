@@ -12,7 +12,7 @@ new WebpackDevServer(webpack(config), {
     // to see success build.
     noInfo: false,
     stats: {
-      // Config for minimal console.log mess.
+      Config for minimal console.log mess.
       assets: false,
       colors: true,
       version: false,
