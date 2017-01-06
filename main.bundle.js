@@ -33525,7 +33525,7 @@
 	        ),
 	        _react2.default.createElement(
 	          "a",
-	          { href: "./content/current-resume.pdf", className: "resume-link" },
+	          { href: "./content/current-resume-portfolio.pdf", className: "resume-link" },
 	          "Check out my resume for more."
 	        )
 	      );
