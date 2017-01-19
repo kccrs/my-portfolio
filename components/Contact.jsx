@@ -5,6 +5,9 @@ export default class Contact extends Component {
     return (
       <div className="Contact">
         <h2 className="contact-blurb">Feel free to contact me for future nerd adventures and opportunities!</h2>
+        <section className="resume-section">
+          <a href="./content/resume-jan-17.pdf" className="contact-blurb resume">Resume</a>
+        </section>
         <ul className="contact-list">
           <li className="social-media-icon">
             <a href="https://github.com/kccrs"><img src="../content/images/github-square.svg" alt="GitHub icon" /></a>

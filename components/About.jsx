@@ -53,11 +53,11 @@ export default class About extends Component {
             <article className="three">
               <h3>Boulder Valley Public Schools</h3>
               <h4>Fifth and First Grade Teacher</h4>
-              <h5 className="history-dates">2010 - 2012</h5>
+              <h5 className="history-dates">2010 - 2012</h5>c
             </article>
           </div>
         </section>
-        <a href="./content/current-resume-portfolio.pdf" className="resume-link">Check out my resume for more.</a>
+        <a href="./content/resume-jan-17.pdf" className="resume-link">Check out my resume for more.</a>
       </div>
     );
   }

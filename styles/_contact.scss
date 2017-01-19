@@ -16,12 +16,22 @@
   font-family: $font-raleway;
   letter-spacing: .06em;
   line-height: 1.4em;
-  padding: 20% 10%;
+  padding: 15% 10%;
   text-align: center;
   @include breakpoint($medium) {
     @include font-size(36px);
     margin-top: 10%;
   }
+}
+
+.resume-section {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.resume {
+  padding: 0;
 }
 
 .contact-list {
