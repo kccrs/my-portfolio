@@ -57,7 +57,6 @@ export default class About extends Component {
             </article>
           </div>
         </section>
-        <a href="./content/current-resume-portfolio.pdf" className="resume-link">Check out my resume for more.</a>
       </div>
     );
   }
