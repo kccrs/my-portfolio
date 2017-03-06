@@ -6,7 +6,7 @@ export default class Contact extends Component {
       <div className="Contact">
         <h2 className="contact-blurb">Feel free to contact me for future nerd adventures and opportunities!</h2>
         <section className="resume-section">
-          <a href="./content/current-resume-feb-21-2017.pdf" className="contact-blurb resume">→ Resume ←</a>
+          <a href="./content/current-resume-march-6.pdf" className="contact-blurb resume">→ Resume ←</a>
         </section>
         <section className="contact-list-section">
           <ul className="contact-list">

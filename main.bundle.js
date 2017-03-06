@@ -34075,7 +34075,7 @@
 	          { className: "resume-section" },
 	          _react2.default.createElement(
 	            "a",
-	            { href: "./content/current-resume-feb-21-2017.pdf", className: "contact-blurb resume" },
+	            { href: "./content/current-resume-march-6.pdf", className: "contact-blurb resume" },
 	            "\u2192 Resume \u2190"
 	          )
 	        ),
