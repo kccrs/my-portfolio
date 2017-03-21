@@ -41,14 +41,14 @@ export default class About extends Component {
           <h2 className="about-section-title">I like to share what I learn</h2>
           <div className="flex-content">
             <article className="one">
+              <h3>Turing School of Software & Design</h3>
+              <h4>Front-end Student Support</h4>
+              <h5 className="history-dates">2017-present</h5>
+            </article>
+            <article className="two">
               <h3>WellDyne, Inc.</h3>
               <h4>Contract & Credentialing Analyst</h4>
               <h5 className="history-dates">2012-2016</h5>
-            </article>
-            <article className="two">
-              <h3>Denver Public Schools</h3>
-              <h4>Fourth Grade Teacher</h4>
-              <h5 className="history-dates">2013-2014</h5>
             </article>
             <article className="three">
               <h3>Boulder Valley Public Schools</h3>

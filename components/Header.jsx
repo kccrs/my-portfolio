@@ -16,7 +16,7 @@ export default class Header extends Component {
         <section className="logo">
           <h1 className="my-name"><Link to="/">Casey Cross</Link></h1>
           <h2 className="my-title">Front End Developer</h2>
-          <h3 className="copyright copyright-header">&copy; 2016 Casey Cross</h3>
+          <h3 className="copyright copyright-header">&copy; 2017 Casey Cross</h3>
         </section>
       </header>
     );
