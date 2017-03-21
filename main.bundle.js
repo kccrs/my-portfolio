@@ -33470,6 +33470,25 @@
 	              _react2.default.createElement(
 	                "h3",
 	                null,
+	                "Turing School of Software & Design"
+	              ),
+	              _react2.default.createElement(
+	                "h4",
+	                null,
+	                "Front-end Student Support"
+	              ),
+	              _react2.default.createElement(
+	                "h5",
+	                { className: "history-dates" },
+	                "2017-present"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "article",
+	              { className: "two" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
 	                "WellDyne, Inc."
 	              ),
 	              _react2.default.createElement(
@@ -33481,25 +33500,6 @@
 	                "h5",
 	                { className: "history-dates" },
 	                "2012-2016"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "article",
-	              { className: "two" },
-	              _react2.default.createElement(
-	                "h3",
-	                null,
-	                "Denver Public Schools"
-	              ),
-	              _react2.default.createElement(
-	                "h4",
-	                null,
-	                "Fourth Grade Teacher"
-	              ),
-	              _react2.default.createElement(
-	                "h5",
-	                { className: "history-dates" },
-	                "2013-2014"
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -33615,7 +33615,7 @@
 	        _react2.default.createElement(
 	          'h3',
 	          { className: 'copyright copyright-bottom' },
-	          '\xA9 2016 Casey Cross'
+	          '\xA9 2017 Casey Cross'
 	        )
 	      );
 	    }
@@ -34255,7 +34255,7 @@
 	          _react2.default.createElement(
 	            'h3',
 	            { className: 'copyright copyright-header' },
-	            '\xA9 2016 Casey Cross'
+	            '\xA9 2017 Casey Cross'
 	          )
 	        )
 	      );
