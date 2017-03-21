@@ -12,6 +12,10 @@ export default class Code extends Component {
       <section className="Code">
         <hr className="hr-first"/>
         <article className="project-container">
+          <Image textKey="fridays" />
+          <Project textKey="fridays"/>
+        </article>
+        <article className="project-container">
           <Image textKey="shootBreeze" />
           <Project textKey="shootBreeze"/>
         </article>
