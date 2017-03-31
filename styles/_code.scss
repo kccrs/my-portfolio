@@ -20,10 +20,12 @@
 }
 
 .project-image {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 5%;
-  max-width: 100%;
-  @include breakpoint($medium) {
-    width: 85%;
+  max-width: 90%;
+  @include breakpoint($small) {
+    max-width: 80%;
   }
 }
 
@@ -63,6 +65,14 @@ hr {
     height: 2px;
     margin: 0 10% 5%;
   }
+}
+
+.website {
+  padding-bottom: 50px;
+}
+
+.hr-first {
+  margin-top: 0;
 }
 
 .hr-last {

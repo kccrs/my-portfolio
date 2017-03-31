@@ -67,7 +67,7 @@ const projectInfo = {
   globot: {
     projectTitle: 'GloBot',
     aboutProject:
-                  'This is an interactive, choose-your-own-adventure children\'s story about a robot in outer space.  I built this in React and used dynamic SVGs and CSS  transformations and animations to bring the story to life.  I also implemented a text-to-speech API to enable children who are learning to read, English language learners, and people with a disability to access and enjoy the story.',
+                  'This is an interactive, choose-your-own-adventure children\'s story about a robot in outer space.  I designed this in Sketch and built it in React with dynamic SVGs and CSS transformations / animations to bring the story to life.  I also implemented a button enabling a text-to-speech API to increase accessibility for children who are learning to read, English-language learners, and people with  disabilities.',
     imageSrc: 'https://cloud.githubusercontent.com/assets/14968813/24132216/74583cce-0db9-11e7-9e15-150dec371ca1.gif',
     imageClassName: 'project-image globot',
     imageAlt: 'A screenshot of my GloBot project.',
@@ -75,12 +75,14 @@ const projectInfo = {
     githubLink: 'https://github.com/kccrs/globot',
     hasWebsite: '',
     projectWebsite: '',
-    tools: 'HTML5, Sass/SCSS, CSS Animations, JavaScript, React, React Router, Git, Text to Speech API'
+    tools: 'JavaScript, React, React Router, Sketch, HTML5, Sass/SCSS, CSS Animations, Git, Text to Speech API'
   },
   fridays: {
     projectTitle: 'Turing Fridays',
     aboutProject:
-                  'This is an event management system for community activities at the Turing School of Software and Design. It solves several problems the school had around submitting and scheduling student-led sessions (called Spikes). The app enables students to submit their proposals for student-led learning sessions and allows admins to approve and assign locations to each session.  Other students can then log in to see an SVG map of the school and all session locations, as well as register to attend a session.  Staff can also add information and links to guest speakers and professional development activities.',
+                  'This is an event management system for community activities at the Turing School of Software and Design. It solves several problems the school had around submitting and scheduling student-led sessions (called Spikes). The app enables students to submit proposals for student-led learning sessions and allows admins to approve and assign locations to each session.',
+    secondaryDescription:
+                  'Students and staff can then log in to see an SVG map of the school and all session locations, as well as register to attend a session.  Staff can also add information and links to guest speakers and professional development activities. The app is in production and is currently used by nearly 200 students and staff members.',
     imageSrc: 'https://raw.githubusercontent.com/Jeff-Duke/turing-fridays/5183d8c312dfbf65c126b8fac2ef8f22bd44a331/turing-fridays.gif',
     imageClassName: 'project-image fridays',
     imageAlt: 'A screenshot of Turing Fridays project.',

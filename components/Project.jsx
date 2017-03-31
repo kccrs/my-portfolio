@@ -14,6 +14,9 @@ export default class Project extends Component {
         <p className="project-description">
           {projectInfo[projectName].aboutProject}
         </p>
+        <p className="secondary-description">
+          {projectInfo[projectName].secondaryDescription}
+        </p>
         <p className="collaborators">
           {projectInfo[projectName].collaborators}
         </p>
