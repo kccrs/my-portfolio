@@ -21,11 +21,12 @@
 }
 
 .project-description,
+.secondary-description,
 .collaborators,
 .tools,
 .github,
 .website {
-  @include font-size(20px);
+  @include font-size(16px);
   line-height: 1.35em;
   padding: 3% 7%;
   @include breakpoint($small) {

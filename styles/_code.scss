@@ -20,9 +20,12 @@
 }
 
 .project-image {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 5%;
-  max-width: 100%;
+  max-width: 90%;
   @include breakpoint($medium) {
+    // margin: 0 auto;
     width: 85%;
   }
 }
@@ -63,6 +66,10 @@ hr {
     height: 2px;
     margin: 0 10% 5%;
   }
+}
+
+.hr-first {
+  margin-top: 0;
 }
 
 .hr-last {

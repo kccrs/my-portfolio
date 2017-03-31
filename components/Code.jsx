@@ -15,6 +15,7 @@ export default class Code extends Component {
           <Image textKey="fridays" />
           <Project textKey="fridays"/>
         </article>
+        <hr />
         <article className="project-container">
           <Image textKey="shootBreeze" />
           <Project textKey="shootBreeze"/>
@@ -30,9 +31,10 @@ export default class Code extends Component {
           <Project textKey="pomodoro"/>
         </article>
         <hr />
-        <p className="morecode-link">
-          <Link to="/morecode">Click here to see more projects.</Link>
-        </p>
+        <article className="project-container">
+          <Image textKey="snakePlane" />
+          <Project textKey="snakePlane"/>
+        </article>
         <hr className="hr-last" />
       </section>
     );
