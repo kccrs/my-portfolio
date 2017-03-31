@@ -82,7 +82,7 @@ const projectInfo = {
     aboutProject:
                   'This is an event management system for community activities at the Turing School of Software and Design. It solves several problems the school had around submitting and scheduling student-led sessions (called Spikes). The app enables students to submit proposals for student-led learning sessions and allows admins to approve and assign locations to each session.',
     secondaryDescription:
-                  'Students and staff can then log in to see an SVG map of the school and all session locations, as well as register to attend a session.  Staff can also add information and links to guest speakers and professional development activities.',
+                  'Students and staff can then log in to see an SVG map of the school and all session locations, as well as register to attend a session.  Staff can also add information and links to guest speakers and professional development activities. The app is in production and is currently used by nearly 200 students and staff members.',
     imageSrc: 'https://raw.githubusercontent.com/Jeff-Duke/turing-fridays/5183d8c312dfbf65c126b8fac2ef8f22bd44a331/turing-fridays.gif',
     imageClassName: 'project-image fridays',
     imageAlt: 'A screenshot of Turing Fridays project.',

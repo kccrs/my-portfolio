@@ -2,6 +2,7 @@
   font-family: $font-raleway;
   @include breakpoint($large) {
     letter-spacing: .06em;
+    margin-bottom: 20px;
   }
 }
 
@@ -30,7 +31,7 @@
   line-height: 1.35em;
   padding: 3% 7%;
   @include breakpoint($small) {
-    @include font-size(24px);
+    @include font-size(20px);
   }
   @include breakpoint($medium) {
     @include font-size(18px);
